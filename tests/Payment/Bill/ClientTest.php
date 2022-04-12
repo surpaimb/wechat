@@ -9,13 +9,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Payment\Bill;
+namespace Surpaimb\WeChat\Tests\Payment\Bill;
 
-use EasyWeChat\Kernel\Http\Response;
-use EasyWeChat\Kernel\Http\StreamResponse;
-use EasyWeChat\Payment\Application;
-use EasyWeChat\Payment\Bill\Client;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\Http\Response;
+use Surpaimb\WeChat\Kernel\Http\StreamResponse;
+use Surpaimb\WeChat\Payment\Application;
+use Surpaimb\WeChat\Payment\Bill\Client;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

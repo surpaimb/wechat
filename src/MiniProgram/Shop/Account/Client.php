@@ -1,13 +1,13 @@
 <?php
 
-namespace EasyWeChat\MiniProgram\Shop\Account;
+namespace Surpaimb\WeChat\MiniProgram\Shop\Account;
 
-use EasyWeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\BaseClient;
 
 /**
  * 自定义版交易组件及开放接口 - 商家入驻接口
  *
- * @package EasyWeChat\MiniProgram\Shop\Account
+ * @package Surpaimb\WeChat\MiniProgram\Shop\Account
  * @author HaoLiang <haoliang@qiyuankeji.cn>
  */
 class Client extends BaseClient
@@ -15,8 +15,8 @@ class Client extends BaseClient
     /**
      * 获取商家类目列表
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getCategoryList()
@@ -27,8 +27,8 @@ class Client extends BaseClient
     /**
      * 获取商家品牌列表
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getBrandList()
@@ -41,8 +41,8 @@ class Client extends BaseClient
      *
      * @param string $path 小程序path
      * @param string $phone 客服联系方式
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function updateInfo(string $path = '', string $phone = '')
@@ -56,8 +56,8 @@ class Client extends BaseClient
     /**
      * 获取商家信息
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getInfo()

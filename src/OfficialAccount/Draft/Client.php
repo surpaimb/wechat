@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Draft;
+namespace Surpaimb\WeChat\OfficialAccount\Draft;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Messages\Article;
+use Surpaimb\WeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\Messages\Article;
 
 /**
  * Class Client.
@@ -24,8 +24,8 @@ class Client extends BaseClient
     /**
      * Add new articles to the draft.
      * @param array $articles
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function add(array $articles)
@@ -36,8 +36,8 @@ class Client extends BaseClient
     /**
      * Get article from the draft.
      * @param string $mediaId
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function get(string $mediaId)
@@ -50,8 +50,8 @@ class Client extends BaseClient
      * @param string $mediaId
      * @param int $index
      * @param $article
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function update(string $mediaId, int $index, $article)
@@ -66,8 +66,8 @@ class Client extends BaseClient
 
     /**
      * Get draft total count
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function count()
@@ -80,8 +80,8 @@ class Client extends BaseClient
      * @param int $offset
      * @param int $count
      * @param int $noContent
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function batchGet(int $offset = 0, int $count = 20, int $noContent = 0)
@@ -97,8 +97,8 @@ class Client extends BaseClient
     /**
      * Delete article.
      * @param string $mediaId
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function delete(string $mediaId)

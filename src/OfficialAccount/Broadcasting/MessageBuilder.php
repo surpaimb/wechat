@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Broadcasting;
+namespace Surpaimb\WeChat\OfficialAccount\Broadcasting;
 
-use EasyWeChat\Kernel\Contracts\MessageInterface;
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
+use Surpaimb\WeChat\Kernel\Contracts\MessageInterface;
+use Surpaimb\WeChat\Kernel\Exceptions\RuntimeException;
 
 /**
  * Class MessageBuilder.
@@ -27,7 +27,7 @@ class MessageBuilder
     protected $to = [];
 
     /**
-     * @var \EasyWeChat\Kernel\Contracts\MessageInterface
+     * @var \Surpaimb\WeChat\Kernel\Contracts\MessageInterface
      */
     protected $message;
 
@@ -39,7 +39,7 @@ class MessageBuilder
     /**
      * Set message.
      *
-     * @param \EasyWeChat\Kernel\Contracts\MessageInterface $message
+     * @param \Surpaimb\WeChat\Kernel\Contracts\MessageInterface $message
      *
      * @return $this
      */
@@ -67,7 +67,7 @@ class MessageBuilder
     /**
      * @param int $tagId
      *
-     * @return \EasyWeChat\OfficialAccount\Broadcasting\MessageBuilder
+     * @return \Surpaimb\WeChat\OfficialAccount\Broadcasting\MessageBuilder
      */
     public function toTag(int $tagId)
     {
@@ -84,7 +84,7 @@ class MessageBuilder
     /**
      * @param array $openids
      *
-     * @return \EasyWeChat\OfficialAccount\Broadcasting\MessageBuilder
+     * @return \Surpaimb\WeChat\OfficialAccount\Broadcasting\MessageBuilder
      */
     public function toUsers(array $openids)
     {
@@ -110,7 +110,7 @@ class MessageBuilder
     /**
      * @param array $attributes
      *
-     * @return \EasyWeChat\OfficialAccount\Broadcasting\MessageBuilder
+     * @return \Surpaimb\WeChat\OfficialAccount\Broadcasting\MessageBuilder
      */
     public function with(array $attributes)
     {
@@ -126,7 +126,7 @@ class MessageBuilder
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\RuntimeException
      */
     public function build(array $prepends = []): array
     {
@@ -153,7 +153,7 @@ class MessageBuilder
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\RuntimeException
      */
     public function buildForPreview(string $by, string $user): array
     {

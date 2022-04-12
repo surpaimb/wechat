@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenWork\SuiteAuth;
+namespace Surpaimb\WeChat\OpenWork\SuiteAuth;
 
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\Traits\InteractsWithCache;
-use EasyWeChat\OpenWork\Application;
+use Surpaimb\WeChat\Kernel\Exceptions\RuntimeException;
+use Surpaimb\WeChat\Kernel\Traits\InteractsWithCache;
+use Surpaimb\WeChat\OpenWork\Application;
 
 /**
  * SuiteTicket.
@@ -44,8 +44,8 @@ class SuiteTicket
      *
      * @return $this
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\RuntimeException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function setTicket(string $ticket)
@@ -62,8 +62,8 @@ class SuiteTicket
     /**
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\RuntimeException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function getTicket(): string

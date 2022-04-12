@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\User;
+namespace Surpaimb\WeChat\Work\User;
 
-use EasyWeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -25,9 +25,9 @@ class LinkedCorpClient extends BaseClient
      *
      * @see https://open.work.weixin.qq.com/api/doc/90000/90135/93172
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getAgentPermissions()
@@ -42,9 +42,9 @@ class LinkedCorpClient extends BaseClient
      *
      * @param string $userId
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getUser(string $userId)
@@ -64,9 +64,9 @@ class LinkedCorpClient extends BaseClient
      * @param string $departmentId
      * @param bool $fetchChild
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getUsers(string $departmentId, bool $fetchChild = true)
@@ -87,9 +87,9 @@ class LinkedCorpClient extends BaseClient
      * @param string $departmentId
      * @param bool $fetchChild
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getDetailedUsers(string $departmentId, bool $fetchChild = true)
@@ -109,9 +109,9 @@ class LinkedCorpClient extends BaseClient
      *
      * @param string $departmentId
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getDepartments(string $departmentId)

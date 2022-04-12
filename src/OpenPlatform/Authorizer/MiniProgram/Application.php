@@ -9,22 +9,22 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Authorizer\MiniProgram;
+namespace Surpaimb\WeChat\OpenPlatform\Authorizer\MiniProgram;
 
-use EasyWeChat\MiniProgram\Application as MiniProgram;
-use EasyWeChat\OpenPlatform\Authorizer\Aggregate\AggregateServiceProvider;
+use Surpaimb\WeChat\MiniProgram\Application as MiniProgram;
+use Surpaimb\WeChat\OpenPlatform\Authorizer\Aggregate\AggregateServiceProvider;
 
 /**
  * Class Application.
  *
  * @author mingyoung <mingyoungcheung@gmail.com>
  *
- * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Account\Client  $account
- * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Code\Client     $code
- * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Domain\Client   $domain
- * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Setting\Client  $setting
- * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Tester\Client   $tester
- * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Material\Client $material
+ * @property \Surpaimb\WeChat\OpenPlatform\Authorizer\MiniProgram\Account\Client  $account
+ * @property \Surpaimb\WeChat\OpenPlatform\Authorizer\MiniProgram\Code\Client     $code
+ * @property \Surpaimb\WeChat\OpenPlatform\Authorizer\MiniProgram\Domain\Client   $domain
+ * @property \Surpaimb\WeChat\OpenPlatform\Authorizer\MiniProgram\Setting\Client  $setting
+ * @property \Surpaimb\WeChat\OpenPlatform\Authorizer\MiniProgram\Tester\Client   $tester
+ * @property \Surpaimb\WeChat\OpenPlatform\Authorizer\MiniProgram\Material\Client $material
  */
 class Application extends MiniProgram
 {

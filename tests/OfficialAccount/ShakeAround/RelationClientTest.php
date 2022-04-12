@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OfficialAccount\ShakeAround;
+namespace Surpaimb\WeChat\Tests\OfficialAccount\ShakeAround;
 
-use EasyWeChat\OfficialAccount\ShakeAround\RelationClient;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\OfficialAccount\ShakeAround\RelationClient;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class RelationClientTest extends TestCase
 {

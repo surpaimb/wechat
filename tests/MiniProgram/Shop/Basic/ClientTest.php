@@ -1,15 +1,15 @@
 <?php
 
-namespace EasyWeChat\Tests\MiniProgram\Shop\Basic;
+namespace Surpaimb\WeChat\Tests\MiniProgram\Shop\Basic;
 
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\MiniProgram\Shop\Basic\Client;
+use Surpaimb\WeChat\Tests\TestCase;
+use Surpaimb\WeChat\MiniProgram\Shop\Basic\Client;
 
 /**
  * 自定义版交易组件开放接口
  *    申请接入接口
  *
- * @package EasyWeChat\Tests\MiniProgram\Shop\Basic
+ * @package Surpaimb\WeChat\Tests\MiniProgram\Shop\Basic
  * @author HaoLiang <haoliang@qiyuankeji.cn>
  */
 class ClientTest extends TestCase

@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\GroupRobot;
+namespace Surpaimb\WeChat\Work\GroupRobot;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Work\GroupRobot\Messages\Message;
+use Surpaimb\WeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Work\GroupRobot\Messages\Message;
 
 /**
  * Class Client.
@@ -26,7 +26,7 @@ class Client extends BaseClient
      *
      * @return Messenger
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      */
     public function message($message)
     {
@@ -37,9 +37,9 @@ class Client extends BaseClient
      * @param string $key
      * @param array  $message
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function send(string $key, array $message)

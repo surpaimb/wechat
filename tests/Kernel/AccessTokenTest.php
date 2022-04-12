@@ -9,15 +9,15 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel;
+namespace Surpaimb\WeChat\Tests\Kernel;
 
-use EasyWeChat\Kernel\AccessToken;
-use EasyWeChat\Kernel\Exceptions\HttpException;
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Kernel\Support\Collection;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\AccessToken;
+use Surpaimb\WeChat\Kernel\Exceptions\HttpException;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
+use Surpaimb\WeChat\Kernel\Exceptions\RuntimeException;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\Kernel\Support\Collection;
+use Surpaimb\WeChat\Tests\TestCase;
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;

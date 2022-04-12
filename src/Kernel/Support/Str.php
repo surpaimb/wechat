@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Support;
+namespace Surpaimb\WeChat\Kernel\Support;
 
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
+use Surpaimb\WeChat\Kernel\Exceptions\RuntimeException;
 
 /**
  * Class Str.
@@ -62,7 +62,7 @@ class Str
      *
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\RuntimeException
      */
     public static function random($length = 16)
     {

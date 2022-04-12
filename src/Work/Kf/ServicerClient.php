@@ -9,14 +9,14 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\Kf;
+namespace Surpaimb\WeChat\Work\Kf;
 
-use EasyWeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\BaseClient;
 
 /**
  * Class ServicerClient.
  *
- * @package EasyWeChat\Work\Kf
+ * @package Surpaimb\WeChat\Work\Kf
  *
  * @author 读心印 <aa24615@qq.com>
  */
@@ -30,9 +30,9 @@ class ServicerClient extends BaseClient
      * @param string $openKfId
      * @param array $userIds
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function add(string $openKfId, array $userIds)
@@ -53,9 +53,9 @@ class ServicerClient extends BaseClient
      * @param string $openKfId
      * @param array $userIds
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function del(string $openKfId, array $userIds)
@@ -75,9 +75,9 @@ class ServicerClient extends BaseClient
      *
      * @param string $openKfId
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function list(string $openKfId)

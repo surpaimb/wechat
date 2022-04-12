@@ -9,13 +9,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Payment\Notify;
+namespace Surpaimb\WeChat\Tests\Payment\Notify;
 
-use EasyWeChat\Kernel\Support\XML;
-use EasyWeChat\Payment\Application;
-use EasyWeChat\Payment\Kernel\Exceptions\InvalidSignException;
-use EasyWeChat\Payment\Notify\Paid;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\Support\XML;
+use Surpaimb\WeChat\Payment\Application;
+use Surpaimb\WeChat\Payment\Kernel\Exceptions\InvalidSignException;
+use Surpaimb\WeChat\Payment\Notify\Paid;
+use Surpaimb\WeChat\Tests\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 

@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\GroupRobot\Messages;
+namespace Surpaimb\WeChat\Work\GroupRobot\Messages;
 
 /**
  * Class Text.

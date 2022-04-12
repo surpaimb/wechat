@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\GroupWelcomeTemplate;
+namespace Surpaimb\WeChat\Work\GroupWelcomeTemplate;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
@@ -17,7 +17,7 @@ use Pimple\ServiceProviderInterface;
 /**
  * 入群欢迎语素材管理
  *
- * @package EasyWeChat\Work\GroupWelcomeTemplate\ServiceProvider
+ * @package Surpaimb\WeChat\Work\GroupWelcomeTemplate\ServiceProvider
  * @author HaoLiang <haoliang@qiyuankeji.cn>
  */
 class ServiceProvider implements ServiceProviderInterface

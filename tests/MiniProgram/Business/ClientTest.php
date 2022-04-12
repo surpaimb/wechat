@@ -5,11 +5,11 @@
  *
  */
 
-namespace EasyWeChat\Tests\MiniProgram\Business;
+namespace Surpaimb\WeChat\Tests\MiniProgram\Business;
 
-use EasyWeChat\MiniProgram\Business\Client;
-use EasyWeChat\MiniProgram\Business\Messenger;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\MiniProgram\Business\Client;
+use Surpaimb\WeChat\MiniProgram\Business\Messenger;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

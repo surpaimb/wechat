@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\UniformMessage;
+namespace Surpaimb\WeChat\MiniProgram\UniformMessage;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\OfficialAccount\TemplateMessage\Client as BaseClient;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
+use Surpaimb\WeChat\OfficialAccount\TemplateMessage\Client as BaseClient;
 
 class Client extends BaseClient
 {
@@ -91,7 +91,7 @@ class Client extends BaseClient
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      */
     protected function formatWeappMessage(array $data = [])
     {
@@ -107,7 +107,7 @@ class Client extends BaseClient
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      */
     protected function formatMpMessage(array $data = [])
     {
@@ -128,7 +128,7 @@ class Client extends BaseClient
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      */
     protected function baseFormat($data = [], $default = [])
     {

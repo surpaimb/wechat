@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work\MiniProgram\Auth;
+namespace Surpaimb\WeChat\Tests\Work\MiniProgram\Auth;
 
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\MiniProgram\Auth\Client;
+use Surpaimb\WeChat\Tests\TestCase;
+use Surpaimb\WeChat\Work\MiniProgram\Auth\Client;
 
 /**
  * Class Auth.

@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Base;
+namespace Surpaimb\WeChat\OfficialAccount\Base;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Surpaimb\WeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
 
 /**
  * Class Client.
@@ -24,9 +24,9 @@ class Client extends BaseClient
     /**
      * Clear quota.
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function clearQuota()
@@ -41,9 +41,9 @@ class Client extends BaseClient
     /**
      * Get wechat callback ip.
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function getValidIps()
     {
@@ -56,10 +56,10 @@ class Client extends BaseClient
      * @param string $action
      * @param string $operator
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
      * @throws InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function checkCallbackUrl(string $action = 'all', string $operator = 'DEFAULT')

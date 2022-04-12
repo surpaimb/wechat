@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\ShakeAround;
+namespace Surpaimb\WeChat\OfficialAccount\ShakeAround;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Surpaimb\WeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
 
 /**
  * Class MaterialClient.
@@ -29,8 +29,8 @@ class MaterialClient extends BaseClient
      *
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function uploadImage(string $path, string $type = 'icon')

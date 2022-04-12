@@ -9,25 +9,25 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Test\OfficialAccount\Card;
+namespace Surpaimb\WeChat\Test\OfficialAccount\Card;
 
-use EasyWeChat\OfficialAccount\Application;
-use EasyWeChat\OfficialAccount\Card\BoardingPassClient;
-use EasyWeChat\OfficialAccount\Card\Card;
-use EasyWeChat\OfficialAccount\Card\Client;
-use EasyWeChat\OfficialAccount\Card\CodeClient;
-use EasyWeChat\OfficialAccount\Card\CoinClient;
-use EasyWeChat\OfficialAccount\Card\GeneralCardClient;
-use EasyWeChat\OfficialAccount\Card\GiftCardClient;
-use EasyWeChat\OfficialAccount\Card\GiftCardOrderClient;
-use EasyWeChat\OfficialAccount\Card\GiftCardPageClient;
-use EasyWeChat\OfficialAccount\Card\InvoiceClient;
-use EasyWeChat\OfficialAccount\Card\JssdkClient;
-use EasyWeChat\OfficialAccount\Card\MeetingTicketClient;
-use EasyWeChat\OfficialAccount\Card\MemberCardClient;
-use EasyWeChat\OfficialAccount\Card\MovieTicketClient;
-use EasyWeChat\OfficialAccount\Card\SubMerchantClient;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\OfficialAccount\Application;
+use Surpaimb\WeChat\OfficialAccount\Card\BoardingPassClient;
+use Surpaimb\WeChat\OfficialAccount\Card\Card;
+use Surpaimb\WeChat\OfficialAccount\Card\Client;
+use Surpaimb\WeChat\OfficialAccount\Card\CodeClient;
+use Surpaimb\WeChat\OfficialAccount\Card\CoinClient;
+use Surpaimb\WeChat\OfficialAccount\Card\GeneralCardClient;
+use Surpaimb\WeChat\OfficialAccount\Card\GiftCardClient;
+use Surpaimb\WeChat\OfficialAccount\Card\GiftCardOrderClient;
+use Surpaimb\WeChat\OfficialAccount\Card\GiftCardPageClient;
+use Surpaimb\WeChat\OfficialAccount\Card\InvoiceClient;
+use Surpaimb\WeChat\OfficialAccount\Card\JssdkClient;
+use Surpaimb\WeChat\OfficialAccount\Card\MeetingTicketClient;
+use Surpaimb\WeChat\OfficialAccount\Card\MemberCardClient;
+use Surpaimb\WeChat\OfficialAccount\Card\MovieTicketClient;
+use Surpaimb\WeChat\OfficialAccount\Card\SubMerchantClient;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class CardTest extends TestCase
 {

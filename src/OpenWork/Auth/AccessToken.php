@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenWork\Auth;
+namespace Surpaimb\WeChat\OpenWork\Auth;
 
-use  EasyWeChat\Kernel\AccessToken as BaseAccessToken;
+use  Surpaimb\WeChat\Kernel\AccessToken as BaseAccessToken;
 
 /**
  * AccessToken.

@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\BasicService\QrCode;
+namespace Surpaimb\WeChat\Tests\BasicService\QrCode;
 
-use EasyWeChat\BasicService\QrCode\Client;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\BasicService\QrCode\Client;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

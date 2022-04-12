@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\QrCode;
+namespace Surpaimb\WeChat\MiniProgram\QrCode;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Messages;
+namespace Surpaimb\WeChat\Tests\Kernel\Messages;
 
-use EasyWeChat\Kernel\Messages\MiniProgramPage;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\Messages\MiniProgramPage;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class MiniProgramPageTest extends TestCase
 {

@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenWork\Corp;
+namespace Surpaimb\WeChat\OpenWork\Corp;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
 
 /**
  * Client.
@@ -25,7 +25,7 @@ class Client extends BaseClient
      * Client constructor.
      * 三方接口有三个access_token，这里用的是suite_access_token.
      *
-     * @param \EasyWeChat\Kernel\ServiceContainer $app
+     * @param \Surpaimb\WeChat\Kernel\ServiceContainer $app
      */
     public function __construct(ServiceContainer $app)
     {
@@ -41,7 +41,7 @@ class Client extends BaseClient
      *
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function getPreAuthorizationUrl(string $preAuthCode = '', string $redirectUri = '', string $state = '')
     {
@@ -64,7 +64,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function getPreAuthCode()
     {
@@ -80,7 +80,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function setSession(string $preAuthCode, array $sessionInfo)
@@ -100,7 +100,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getPermanentByCode(string $authCode)
@@ -120,7 +120,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getAuthorization(string $authCorpId, string $permanentCode)
@@ -141,7 +141,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getManagers(string $authCorpId, string $agentId)
@@ -185,7 +185,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function getUserByCode(string $code)
     {
@@ -201,9 +201,9 @@ class Client extends BaseClient
      *
      * @param string $userTicket
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getUserByTicket(string $userTicket)

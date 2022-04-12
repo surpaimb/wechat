@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Account;
+namespace Surpaimb\WeChat\OpenPlatform\Authorizer\MiniProgram\Account;
 
-use EasyWeChat\OpenPlatform\Authorizer\Aggregate\Account\Client as BaseClient;
+use Surpaimb\WeChat\OpenPlatform\Authorizer\Aggregate\Account\Client as BaseClient;
 
 /**
  * Class Client.
@@ -37,9 +37,9 @@ class Client extends BaseClient
      * @param string $right   剪裁框右下角x坐标（取值范围：[0, 1]）
      * @param string $bottom  剪裁框右下角y坐标（取值范围：[0, 1]）
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function updateAvatar(
@@ -65,9 +65,9 @@ class Client extends BaseClient
      *
      * @param string $signature 功能介绍（简介）
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function updateSignature(string $signature)

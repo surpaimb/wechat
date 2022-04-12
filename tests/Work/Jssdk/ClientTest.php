@@ -9,13 +9,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work\Jssdk;
+namespace Surpaimb\WeChat\Tests\Work\Jssdk;
 
-use EasyWeChat\Kernel\Http\Response;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\Application;
-use EasyWeChat\Work\Jssdk\Client;
+use Surpaimb\WeChat\Kernel\Http\Response;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\Tests\TestCase;
+use Surpaimb\WeChat\Work\Application;
+use Surpaimb\WeChat\Work\Jssdk\Client;
 
 class ClientTest extends TestCase
 {
@@ -39,7 +39,7 @@ class ClientTest extends TestCase
         ];
         $cacheKey = 'easywechat.work.jssdk.ticket.config.123456';
         $client->allows()->getCache()->andReturn($cache);
-        $response = new \EasyWeChat\Kernel\Http\Response(200, [], json_encode($ticket));
+        $response = new \Surpaimb\WeChat\Kernel\Http\Response(200, [], json_encode($ticket));
 
         // no refresh and cached
         $cache->expects()->has($cacheKey)->andReturn(true);
@@ -113,7 +113,7 @@ class ClientTest extends TestCase
 
     public function testBuildAgentConfig()
     {
-        $client = $this->mockApiClient(\EasyWeChat\Work\Jssdk\Client::class, 'agentConfigSignature', new Application());
+        $client = $this->mockApiClient(\Surpaimb\WeChat\Work\Jssdk\Client::class, 'agentConfigSignature', new Application());
         $client->expects()->agentConfigSignature('agentId', null)->andReturn(['foo' => 'bar'])->twice();
         $config = json_decode($client->buildAgentConfig(['api1', 'api2'], 'agentId'), true);
 

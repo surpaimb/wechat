@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Support;
+namespace Surpaimb\WeChat\Tests\Kernel\Support;
 
-use EasyWeChat\Kernel\Support\XML;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\Support\XML;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class XMLTest extends TestCase
 {

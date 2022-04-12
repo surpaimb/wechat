@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\QrCode;
+namespace Surpaimb\WeChat\MiniProgram\QrCode;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Exceptions\InvalidConfigException;
-use EasyWeChat\Kernel\Support\Collection;
+use Surpaimb\WeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException;
+use Surpaimb\WeChat\Kernel\Support\Collection;
 use GuzzleHttp\Exception\GuzzleException;
 use Psr\Http\Message\ResponseInterface;
 

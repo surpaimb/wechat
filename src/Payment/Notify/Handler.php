@@ -9,13 +9,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Notify;
+namespace Surpaimb\WeChat\Payment\Notify;
 
 use Closure;
-use EasyWeChat\Kernel\Exceptions\Exception;
-use EasyWeChat\Kernel\Support;
-use EasyWeChat\Kernel\Support\XML;
-use EasyWeChat\Payment\Kernel\Exceptions\InvalidSignException;
+use Surpaimb\WeChat\Kernel\Exceptions\Exception;
+use Surpaimb\WeChat\Kernel\Support;
+use Surpaimb\WeChat\Kernel\Support\XML;
+use Surpaimb\WeChat\Payment\Kernel\Exceptions\InvalidSignException;
 use Symfony\Component\HttpFoundation\Response;
 
 abstract class Handler
@@ -24,7 +24,7 @@ abstract class Handler
     public const FAIL = 'FAIL';
 
     /**
-     * @var \EasyWeChat\Payment\Application
+     * @var \Surpaimb\WeChat\Payment\Application
      */
     protected $app;
 
@@ -59,7 +59,7 @@ abstract class Handler
     protected $sign = false;
 
     /**
-     * @param \EasyWeChat\Payment\Application $app
+     * @param \Surpaimb\WeChat\Payment\Application $app
      */
     public function __construct($app)
     {
@@ -102,7 +102,7 @@ abstract class Handler
      *
      * @return \Symfony\Component\HttpFoundation\Response
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      */
     public function toResponse(): Response
     {
@@ -125,7 +125,7 @@ abstract class Handler
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\Exception
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\Exception
      */
     public function getMessage(): array
     {
@@ -157,7 +157,7 @@ abstract class Handler
      *
      * @return string|null
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\Exception
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\Exception
      */
     public function decryptMessage(string $key)
     {
@@ -180,8 +180,8 @@ abstract class Handler
      *
      * @param array $message
      *
-     * @throws \EasyWeChat\Payment\Kernel\Exceptions\InvalidSignException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Payment\Kernel\Exceptions\InvalidSignException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      */
     protected function validate(array $message)
     {

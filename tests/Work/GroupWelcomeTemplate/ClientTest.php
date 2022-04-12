@@ -1,14 +1,14 @@
 <?php
 
-namespace EasyWeChat\Tests\Work\GroupWelcomeTemplate;
+namespace Surpaimb\WeChat\Tests\Work\GroupWelcomeTemplate;
 
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\GroupWelcomeTemplate\Client;
+use Surpaimb\WeChat\Tests\TestCase;
+use Surpaimb\WeChat\Work\GroupWelcomeTemplate\Client;
 
 /**
  * 入群欢迎语素材管理
  *
- * @package EasyWeChat\Tests\Work\GroupWelcomeTemplate
+ * @package Surpaimb\WeChat\Tests\Work\GroupWelcomeTemplate
  * @author HaoLiang <haoliang@qiyuankeji.cn>
  */
 class ClientTest extends TestCase

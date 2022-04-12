@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenPlatform\Server;
+namespace Surpaimb\WeChat\Tests\OpenPlatform\Server;
 
-use EasyWeChat\OpenPlatform\Application;
-use EasyWeChat\OpenPlatform\Server\Guard;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\OpenPlatform\Application;
+use Surpaimb\WeChat\OpenPlatform\Server\Guard;
+use Surpaimb\WeChat\Tests\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 

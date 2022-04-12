@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\Broadcast;
+namespace Surpaimb\WeChat\MiniProgram\Broadcast;
 
-use EasyWeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -25,9 +25,9 @@ class Client extends BaseClient
      *
      * @param array $goodsInfo
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function create(array $goodsInfo)
@@ -45,9 +45,9 @@ class Client extends BaseClient
      * @param int $auditId
      * @param int $goodsId
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function resetAudit(int $auditId, int $goodsId)
@@ -65,9 +65,9 @@ class Client extends BaseClient
      *
      * @param int $goodsId
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function resubmitAudit(int $goodsId)
@@ -84,9 +84,9 @@ class Client extends BaseClient
      *
      * @param int $goodsId
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function delete(int $goodsId)
@@ -103,9 +103,9 @@ class Client extends BaseClient
      *
      * @param array $goodsInfo
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function update(array $goodsInfo)
@@ -122,9 +122,9 @@ class Client extends BaseClient
      *
      * @param array $goodsIdArray
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getGoodsWarehouse(array $goodsIdArray)
@@ -140,8 +140,8 @@ class Client extends BaseClient
      * Get goods list based on status
      *
      * @param  array  $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getApproved(array $params)
@@ -153,8 +153,8 @@ class Client extends BaseClient
      * Add goods to the designated live room.
      *
      * @param  array  $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function addGoods(array $params)
@@ -167,8 +167,8 @@ class Client extends BaseClient
      *
      * @param  int  $start
      * @param  int  $limit
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @author onekb <1@1kb.ren>
      */
@@ -188,8 +188,8 @@ class Client extends BaseClient
      * @param  int  $roomId
      * @param  int  $start
      * @param  int  $limit
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @author onekb <1@1kb.ren>
      */
@@ -209,8 +209,8 @@ class Client extends BaseClient
      * Create a live room.
      *
      * @param  array  $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function createLiveRoom(array $params)
@@ -222,8 +222,8 @@ class Client extends BaseClient
      * Delete a live room.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function deleteLiveRoom(array $params)
     {
@@ -234,8 +234,8 @@ class Client extends BaseClient
      * Update a live room.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function updateLiveRoom(array $params)
     {
@@ -246,8 +246,8 @@ class Client extends BaseClient
      * Gets the live room push stream url.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function getPushUrl(array $params)
     {
@@ -258,8 +258,8 @@ class Client extends BaseClient
      * Gets the live room share qrcode.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function getShareQrcode(array $params)
     {
@@ -270,8 +270,8 @@ class Client extends BaseClient
      * Add a live room assistant.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function addAssistant(array $params)
     {
@@ -282,8 +282,8 @@ class Client extends BaseClient
      * Update a live room assistant.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function updateAssistant(array $params)
     {
@@ -294,8 +294,8 @@ class Client extends BaseClient
      * Delete a live room assistant.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function deleteAssistant(array $params)
     {
@@ -306,8 +306,8 @@ class Client extends BaseClient
      * Gets the assistant list.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function getAssistantList(array $params)
     {
@@ -318,8 +318,8 @@ class Client extends BaseClient
      * Add the sub anchor.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function addSubAnchor(array $params)
     {
@@ -330,8 +330,8 @@ class Client extends BaseClient
      * Update the sub anchor.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function updateSubAnchor(array $params)
     {
@@ -342,8 +342,8 @@ class Client extends BaseClient
      * Delete the sub anchor.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function deleteSubAnchor(array $params)
     {
@@ -354,8 +354,8 @@ class Client extends BaseClient
      * Gets the sub anchor info.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function getSubAnchor(array $params)
     {
@@ -366,8 +366,8 @@ class Client extends BaseClient
      * Turn official index on/off.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function updateFeedPublic(array $params)
     {
@@ -378,8 +378,8 @@ class Client extends BaseClient
      * Turn playback status on/off.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function updateReplay(array $params)
     {
@@ -390,8 +390,8 @@ class Client extends BaseClient
      * Turn customer service status on/off.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function updateKf(array $params)
     {
@@ -402,8 +402,8 @@ class Client extends BaseClient
      * Turn global comments status on/off.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function updateComment(array $params)
     {
@@ -414,8 +414,8 @@ class Client extends BaseClient
      * Add member role.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function addRole(array $params)
     {
@@ -426,8 +426,8 @@ class Client extends BaseClient
      * Delete member role.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function deleteRole(array $params)
     {
@@ -438,8 +438,8 @@ class Client extends BaseClient
      * Gets the role list.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function getRoleList(array $params)
     {
@@ -450,8 +450,8 @@ class Client extends BaseClient
      * Gets long-term subscribers.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getFollowers(array $params)
@@ -463,8 +463,8 @@ class Client extends BaseClient
      * Sending live broadcast start event to long-term subscribers.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function pushMessage(array $params)
@@ -476,8 +476,8 @@ class Client extends BaseClient
      * Change the status of goods on/off shelves in room.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function updateGoodsInRoom(array $params)
@@ -489,8 +489,8 @@ class Client extends BaseClient
      * Delete goods in room.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function deleteGoodsInRoom(array $params)
@@ -502,8 +502,8 @@ class Client extends BaseClient
      * Push goods in room.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function pushGoods(array $params)
@@ -515,8 +515,8 @@ class Client extends BaseClient
      * Change goods sort in room.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function sortGoods(array $params)
@@ -528,8 +528,8 @@ class Client extends BaseClient
      * Download goods explanation video.
      *
      * @param array $params
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function downloadGoodsExplanationVideo(array $params)

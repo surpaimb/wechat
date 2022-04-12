@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MicroMerchant\Material;
+namespace Surpaimb\WeChat\MicroMerchant\Material;
 
-use EasyWeChat\MicroMerchant\Kernel\BaseClient;
+use Surpaimb\WeChat\MicroMerchant\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -26,11 +26,11 @@ class Client extends BaseClient
      *
      * @param array $params
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\EncryptException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\MicroMerchant\Kernel\Exceptions\EncryptException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function setSettlementCard(array $params)
@@ -51,11 +51,11 @@ class Client extends BaseClient
      *
      * @param array $params
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\EncryptException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\MicroMerchant\Kernel\Exceptions\EncryptException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function updateContact(array $params)

@@ -9,14 +9,14 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel;
+namespace Surpaimb\WeChat\Tests\Kernel;
 
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\Support\ArrayAccessible;
-use EasyWeChat\Kernel\Support\Collection;
-use EasyWeChat\Tests\TestCase;
-use function EasyWeChat\Kernel\data_get;
-use function EasyWeChat\Kernel\data_to_array;
+use Surpaimb\WeChat\Kernel\Exceptions\RuntimeException;
+use Surpaimb\WeChat\Kernel\Support\ArrayAccessible;
+use Surpaimb\WeChat\Kernel\Support\Collection;
+use Surpaimb\WeChat\Tests\TestCase;
+use function Surpaimb\WeChat\Kernel\data_get;
+use function Surpaimb\WeChat\Kernel\data_to_array;
 
 class HelpersTest extends TestCase
 {

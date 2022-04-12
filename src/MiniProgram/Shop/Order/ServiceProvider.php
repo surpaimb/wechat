@@ -1,6 +1,6 @@
 <?php
 
-namespace EasyWeChat\MiniProgram\Shop\Order;
+namespace Surpaimb\WeChat\MiniProgram\Shop\Order;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
@@ -8,7 +8,7 @@ use Pimple\ServiceProviderInterface;
 /**
  * 自定义版交易组件及开放接口 - 订单接口
  *
- * @package EasyWeChat\MiniProgram\Shop\Order
+ * @package Surpaimb\WeChat\MiniProgram\Shop\Order
  * @author HaoLiang <haoliang@qiyuankeji.cn>
  */
 class ServiceProvider implements ServiceProviderInterface

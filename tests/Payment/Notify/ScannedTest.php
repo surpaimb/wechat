@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Payment\Notify;
+namespace Surpaimb\WeChat\Tests\Payment\Notify;
 
-use EasyWeChat\Kernel\Support\XML;
-use EasyWeChat\Payment\Application;
-use EasyWeChat\Payment\Notify\Scanned;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\Support\XML;
+use Surpaimb\WeChat\Payment\Application;
+use Surpaimb\WeChat\Payment\Notify\Scanned;
+use Surpaimb\WeChat\Tests\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 

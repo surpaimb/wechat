@@ -8,7 +8,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\SubscribeMessage;
+namespace Surpaimb\WeChat\OfficialAccount\SubscribeMessage;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

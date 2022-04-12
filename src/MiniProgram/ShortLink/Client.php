@@ -1,17 +1,17 @@
 <?php
 
-namespace EasyWeChat\MiniProgram\ShortLink;
+namespace Surpaimb\WeChat\MiniProgram\ShortLink;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Exceptions\InvalidConfigException;
-use EasyWeChat\Kernel\Support\Collection;
+use Surpaimb\WeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException;
+use Surpaimb\WeChat\Kernel\Support\Collection;
 use GuzzleHttp\Exception\GuzzleException;
 use Psr\Http\Message\ResponseInterface;
 
 /**
  * Class Client.
  *
- * @package EasyWeChat\MiniProgram\ShortLink
+ * @package Surpaimb\WeChat\MiniProgram\ShortLink
  *
  * @author 读心印 <aa24615@qq.com>
  */

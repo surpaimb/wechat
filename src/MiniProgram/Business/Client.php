@@ -5,10 +5,10 @@
  *
  */
 
-namespace EasyWeChat\MiniProgram\Business;
+namespace Surpaimb\WeChat\MiniProgram\Business;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Surpaimb\WeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
 
 /**
  * Class Client.
@@ -22,8 +22,8 @@ class Client extends BaseClient
      * @param string $accountName
      * @param string $nickname
      * @param string $iconMediaId
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function register(string $accountName, string $nickname, string $iconMediaId)
@@ -41,8 +41,8 @@ class Client extends BaseClient
      * Get business
      * @param int $businessId
      * @param string $accountName
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getBusiness(int $businessId = 0, string $accountName = '')
@@ -67,8 +67,8 @@ class Client extends BaseClient
      * Get business list
      * @param int $offset
      * @param int $count
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function list(int $offset = 0, int $count = 10)
@@ -86,8 +86,8 @@ class Client extends BaseClient
      * @param int $businessId
      * @param string $nickname
      * @param string $iconMediaId
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function update(int $businessId, string $nickname = '', string $iconMediaId = '')
@@ -104,9 +104,9 @@ class Client extends BaseClient
     /**
      * Get message builder.
      *
-     * @param \EasyWeChat\Kernel\Messages\Message|string $message
+     * @param \Surpaimb\WeChat\Kernel\Messages\Message|string $message
      *
-     * @return \EasyWeChat\MiniProgram\Business\Messenger
+     * @return \Surpaimb\WeChat\MiniProgram\Business\Messenger
      */
     public function message($message)
     {
@@ -120,7 +120,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function send(array $message)
@@ -132,8 +132,8 @@ class Client extends BaseClient
      * Typing status.
      * @param int $businessId
      * @param string $toUser openid
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function typing(int $businessId, string $toUser)

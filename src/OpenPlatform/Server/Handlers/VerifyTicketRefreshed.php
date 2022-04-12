@@ -9,13 +9,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Server\Handlers;
+namespace Surpaimb\WeChat\OpenPlatform\Server\Handlers;
 
-use EasyWeChat\Kernel\Contracts\EventHandlerInterface;
-use EasyWeChat\Kernel\Traits\ResponseCastable;
-use EasyWeChat\OpenPlatform\Application;
+use Surpaimb\WeChat\Kernel\Contracts\EventHandlerInterface;
+use Surpaimb\WeChat\Kernel\Traits\ResponseCastable;
+use Surpaimb\WeChat\OpenPlatform\Application;
 
-use function EasyWeChat\Kernel\data_get;
+use function Surpaimb\WeChat\Kernel\data_get;
 
 /**
  * Class VerifyTicketRefreshed.
@@ -27,14 +27,14 @@ class VerifyTicketRefreshed implements EventHandlerInterface
     use ResponseCastable;
 
     /**
-     * @var \EasyWeChat\OpenPlatform\Application
+     * @var \Surpaimb\WeChat\OpenPlatform\Application
      */
     protected $app;
 
     /**
      * Constructor.
      *
-     * @param \EasyWeChat\OpenPlatform\Application $app
+     * @param \Surpaimb\WeChat\OpenPlatform\Application $app
      */
     public function __construct(Application $app)
     {

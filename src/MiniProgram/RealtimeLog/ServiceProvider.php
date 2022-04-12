@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\RealtimeLog;
+namespace Surpaimb\WeChat\MiniProgram\RealtimeLog;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

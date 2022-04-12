@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenPlatform\Authorizer\Server;
+namespace Surpaimb\WeChat\Tests\OpenPlatform\Authorizer\Server;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OpenPlatform\Authorizer\Server\Guard;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\OpenPlatform\Authorizer\Server\Guard;
+use Surpaimb\WeChat\Tests\TestCase;
 
 /**
  * Class GuardTest.

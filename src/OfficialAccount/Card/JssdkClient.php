@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Card;
+namespace Surpaimb\WeChat\OfficialAccount\Card;
 
-use EasyWeChat\BasicService\Jssdk\Client as Jssdk;
-use EasyWeChat\Kernel\Support\Arr;
-use function EasyWeChat\Kernel\Support\str_random;
+use Surpaimb\WeChat\BasicService\Jssdk\Client as Jssdk;
+use Surpaimb\WeChat\Kernel\Support\Arr;
+use function Surpaimb\WeChat\Kernel\Support\str_random;
 
 /**
  * Class Jssdk.
@@ -28,9 +28,9 @@ class JssdkClient extends Jssdk
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\RuntimeException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function getTicket(bool $refresh = false, string $type = 'wx_card'): array
@@ -60,8 +60,8 @@ class JssdkClient extends Jssdk
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\RuntimeException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function attachExtension($cardId, array $extension = [])

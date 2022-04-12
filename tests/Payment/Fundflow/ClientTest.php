@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Payment\Fundflow;
+namespace Surpaimb\WeChat\Tests\Payment\Fundflow;
 
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

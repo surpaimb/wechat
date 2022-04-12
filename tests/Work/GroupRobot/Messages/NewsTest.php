@@ -11,10 +11,10 @@
 
 namespace Work\GroupRobot\Messages;
 
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\GroupRobot\Messages\Message;
-use EasyWeChat\Work\GroupRobot\Messages\News;
-use EasyWeChat\Work\GroupRobot\Messages\NewsItem;
+use Surpaimb\WeChat\Tests\TestCase;
+use Surpaimb\WeChat\Work\GroupRobot\Messages\Message;
+use Surpaimb\WeChat\Work\GroupRobot\Messages\News;
+use Surpaimb\WeChat\Work\GroupRobot\Messages\NewsItem;
 
 class NewsTest extends TestCase
 {

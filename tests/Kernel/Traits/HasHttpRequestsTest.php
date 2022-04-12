@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Traits;
+namespace Surpaimb\WeChat\Tests\Kernel\Traits;
 
-use EasyWeChat\Kernel\Http\Response;
-use EasyWeChat\Kernel\Traits\HasHttpRequests;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\Http\Response;
+use Surpaimb\WeChat\Kernel\Traits\HasHttpRequests;
+use Surpaimb\WeChat\Tests\TestCase;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\HandlerStack;

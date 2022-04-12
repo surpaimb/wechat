@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Exceptions;
+namespace Surpaimb\WeChat\Kernel\Exceptions;
 
 use Psr\Http\Message\ResponseInterface;
 
@@ -26,7 +26,7 @@ class HttpException extends Exception
     public $response;
 
     /**
-     * @var \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string|null
+     * @var \Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string|null
      */
     public $formattedResponse;
 

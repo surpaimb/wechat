@@ -9,13 +9,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Messages;
+namespace Surpaimb\WeChat\Tests\Kernel\Messages;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\Messages\Message;
-use EasyWeChat\Kernel\Support\XML;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
+use Surpaimb\WeChat\Kernel\Exceptions\RuntimeException;
+use Surpaimb\WeChat\Kernel\Messages\Message;
+use Surpaimb\WeChat\Kernel\Support\XML;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class MessageTest extends TestCase
 {

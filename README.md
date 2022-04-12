@@ -41,7 +41,7 @@ $ composer require "overtrue/wechat:^5.0" -vvv
 ```php
 <?php
 
-use EasyWeChat\Factory;
+use Surpaimb\WeChat\Factory;
 
 $options = [
     'app_id'    => 'wx3cf0f39249eb0exxx',

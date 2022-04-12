@@ -9,18 +9,18 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Server;
+namespace Surpaimb\WeChat\Tests\Kernel\Server;
 
-use EasyWeChat\Kernel\Encryptor;
-use EasyWeChat\Kernel\Exceptions\BadRequestException;
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\Messages\NewsItem;
-use EasyWeChat\Kernel\Messages\Raw;
-use EasyWeChat\Kernel\Messages\Text;
-use EasyWeChat\Kernel\ServerGuard;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Kernel\Support\XML;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\Encryptor;
+use Surpaimb\WeChat\Kernel\Exceptions\BadRequestException;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
+use Surpaimb\WeChat\Kernel\Messages\NewsItem;
+use Surpaimb\WeChat\Kernel\Messages\Raw;
+use Surpaimb\WeChat\Kernel\Messages\Text;
+use Surpaimb\WeChat\Kernel\ServerGuard;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\Kernel\Support\XML;
+use Surpaimb\WeChat\Tests\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 

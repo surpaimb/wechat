@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Messages;
+namespace Surpaimb\WeChat\Kernel\Messages;
 
-use EasyWeChat\Kernel\Contracts\MediaInterface;
-use EasyWeChat\Kernel\Support\Str;
+use Surpaimb\WeChat\Kernel\Contracts\MediaInterface;
+use Surpaimb\WeChat\Kernel\Support\Str;
 
 /**
  * Class Media.
@@ -50,7 +50,7 @@ class Media extends Message implements MediaInterface
     /**
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      */
     public function getMediaId(): string
     {

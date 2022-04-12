@@ -9,15 +9,15 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Server;
+namespace Surpaimb\WeChat\OpenPlatform\Server;
 
-use EasyWeChat\Kernel\ServerGuard;
-use EasyWeChat\OpenPlatform\Server\Handlers\Authorized;
-use EasyWeChat\OpenPlatform\Server\Handlers\Unauthorized;
-use EasyWeChat\OpenPlatform\Server\Handlers\UpdateAuthorized;
-use EasyWeChat\OpenPlatform\Server\Handlers\VerifyTicketRefreshed;
+use Surpaimb\WeChat\Kernel\ServerGuard;
+use Surpaimb\WeChat\OpenPlatform\Server\Handlers\Authorized;
+use Surpaimb\WeChat\OpenPlatform\Server\Handlers\Unauthorized;
+use Surpaimb\WeChat\OpenPlatform\Server\Handlers\UpdateAuthorized;
+use Surpaimb\WeChat\OpenPlatform\Server\Handlers\VerifyTicketRefreshed;
 use Symfony\Component\HttpFoundation\Response;
-use function EasyWeChat\Kernel\data_get;
+use function Surpaimb\WeChat\Kernel\data_get;
 
 /**
  * Class Guard.
@@ -35,9 +35,9 @@ class Guard extends ServerGuard
     /**
      * @return \Symfony\Component\HttpFoundation\Response
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\BadRequestException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\BadRequestException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     protected function resolve(): Response
     {

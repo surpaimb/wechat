@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Bill;
+namespace Surpaimb\WeChat\Payment\Bill;
 
-use EasyWeChat\Kernel\Http\StreamResponse;
-use EasyWeChat\Payment\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\Http\StreamResponse;
+use Surpaimb\WeChat\Payment\Kernel\BaseClient;
 
 class Client extends BaseClient
 {
@@ -23,10 +23,10 @@ class Client extends BaseClient
      * @param string $type
      * @param array  $optional
      *
-     * @return \EasyWeChat\Kernel\Http\StreamResponse|\Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Surpaimb\WeChat\Kernel\Http\StreamResponse|\Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function get(string $date, string $type = 'ALL', array $optional = [])

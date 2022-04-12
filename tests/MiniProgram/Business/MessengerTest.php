@@ -5,13 +5,13 @@
  *
  */
 
-namespace EasyWeChat\Tests\MiniProgram\Business;
+namespace Surpaimb\WeChat\Tests\MiniProgram\Business;
 
-use EasyWeChat\Kernel\Messages\Raw;
-use EasyWeChat\Kernel\Messages\Text;
-use EasyWeChat\MiniProgram\Business\Client;
-use EasyWeChat\MiniProgram\Business\Messenger;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\Messages\Raw;
+use Surpaimb\WeChat\Kernel\Messages\Text;
+use Surpaimb\WeChat\MiniProgram\Business\Client;
+use Surpaimb\WeChat\MiniProgram\Business\Messenger;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class MessengerTest extends TestCase
 {

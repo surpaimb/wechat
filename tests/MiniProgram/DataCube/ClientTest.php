@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\MiniProgram\DataCube;
+namespace Surpaimb\WeChat\Tests\MiniProgram\DataCube;
 
-use EasyWeChat\MiniProgram\DataCube\Client;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\MiniProgram\DataCube\Client;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

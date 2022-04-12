@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\MiniProgram;
+namespace Surpaimb\WeChat\Tests\MiniProgram;
 
-use EasyWeChat\Kernel\Exceptions\DecryptException;
-use EasyWeChat\MiniProgram\Encryptor;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\Exceptions\DecryptException;
+use Surpaimb\WeChat\MiniProgram\Encryptor;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class EncryptorTest extends TestCase
 {

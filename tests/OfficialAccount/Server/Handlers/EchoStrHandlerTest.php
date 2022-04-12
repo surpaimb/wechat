@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OfficialAccount\Server\Handlers;
+namespace Surpaimb\WeChat\Tests\OfficialAccount\Server\Handlers;
 
-use EasyWeChat\Kernel\Decorators\FinallyResult;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OfficialAccount\Server\Handlers\EchoStrHandler;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\Decorators\FinallyResult;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\OfficialAccount\Server\Handlers\EchoStrHandler;
+use Surpaimb\WeChat\Tests\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 
 class EchoStrHandlerTest extends TestCase

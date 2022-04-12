@@ -9,23 +9,23 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenWork;
+namespace Surpaimb\WeChat\OpenWork;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OpenWork\Work\Application as Work;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\OpenWork\Work\Application as Work;
 
 /**
  * Application.
  *
  * @author xiaomin <keacefull@gmail.com>
  *
- * @property \EasyWeChat\OpenWork\Server\Guard            $server
- * @property \EasyWeChat\OpenWork\Corp\Client             $corp
- * @property \EasyWeChat\OpenWork\Provider\Client         $provider
- * @property \EasyWeChat\OpenWork\SuiteAuth\AccessToken   $suite_access_token
- * @property \EasyWeChat\OpenWork\Auth\AccessToken        $provider_access_token
- * @property \EasyWeChat\OpenWork\SuiteAuth\SuiteTicket   $suite_ticket
- * @property \EasyWeChat\OpenWork\MiniProgram\Auth\Client $mini_program
+ * @property \Surpaimb\WeChat\OpenWork\Server\Guard            $server
+ * @property \Surpaimb\WeChat\OpenWork\Corp\Client             $corp
+ * @property \Surpaimb\WeChat\OpenWork\Provider\Client         $provider
+ * @property \Surpaimb\WeChat\OpenWork\SuiteAuth\AccessToken   $suite_access_token
+ * @property \Surpaimb\WeChat\OpenWork\Auth\AccessToken        $provider_access_token
+ * @property \Surpaimb\WeChat\OpenWork\SuiteAuth\SuiteTicket   $suite_ticket
+ * @property \Surpaimb\WeChat\OpenWork\MiniProgram\Auth\Client $mini_program
  */
 class Application extends ServiceContainer
 {
@@ -54,11 +54,11 @@ class Application extends ServiceContainer
     /**
      * Creates the miniProgram application.
      *
-     * @return \EasyWeChat\Work\MiniProgram\Application
+     * @return \Surpaimb\WeChat\Work\MiniProgram\Application
      */
-    public function miniProgram(): \EasyWeChat\Work\MiniProgram\Application
+    public function miniProgram(): \Surpaimb\WeChat\Work\MiniProgram\Application
     {
-        return new \EasyWeChat\Work\MiniProgram\Application($this->getConfig());
+        return new \Surpaimb\WeChat\Work\MiniProgram\Application($this->getConfig());
     }
 
     /**

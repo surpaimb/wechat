@@ -9,51 +9,51 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount;
+namespace Surpaimb\WeChat\OfficialAccount;
 
-use EasyWeChat\BasicService;
-use EasyWeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\BasicService;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
 
 /**
  * Class Application.
  *
  * @author overtrue <i@overtrue.me>
  *
- * @property \EasyWeChat\BasicService\Media\Client                     $media
- * @property \EasyWeChat\BasicService\Url\Client                       $url
- * @property \EasyWeChat\BasicService\QrCode\Client                    $qrcode
- * @property \EasyWeChat\BasicService\Jssdk\Client                     $jssdk
- * @property \EasyWeChat\OfficialAccount\Auth\AccessToken              $access_token
- * @property \EasyWeChat\OfficialAccount\Server\Guard                  $server
- * @property \EasyWeChat\OfficialAccount\User\UserClient               $user
- * @property \EasyWeChat\OfficialAccount\User\TagClient                $user_tag
- * @property \EasyWeChat\OfficialAccount\Menu\Client                   $menu
- * @property \EasyWeChat\OfficialAccount\TemplateMessage\Client        $template_message
- * @property \EasyWeChat\OfficialAccount\SubscribeMessage\Client       $subscribe_message
- * @property \EasyWeChat\OfficialAccount\Material\Client               $material
- * @property \EasyWeChat\OfficialAccount\CustomerService\Client        $customer_service
- * @property \EasyWeChat\OfficialAccount\CustomerService\SessionClient $customer_service_session
- * @property \EasyWeChat\OfficialAccount\Semantic\Client               $semantic
- * @property \EasyWeChat\OfficialAccount\DataCube\Client               $data_cube
- * @property \EasyWeChat\OfficialAccount\AutoReply\Client              $auto_reply
- * @property \EasyWeChat\OfficialAccount\Broadcasting\Client           $broadcasting
- * @property \EasyWeChat\OfficialAccount\Card\Card                     $card
- * @property \EasyWeChat\OfficialAccount\Device\Client                 $device
- * @property \EasyWeChat\OfficialAccount\ShakeAround\ShakeAround       $shake_around
- * @property \EasyWeChat\OfficialAccount\POI\Client                    $poi
- * @property \EasyWeChat\OfficialAccount\Store\Client                  $store
- * @property \EasyWeChat\OfficialAccount\Base\Client                   $base
- * @property \EasyWeChat\OfficialAccount\Comment\Client                $comment
- * @property \EasyWeChat\OfficialAccount\OCR\Client                    $ocr
- * @property \EasyWeChat\OfficialAccount\Goods\Client                  $goods
+ * @property \Surpaimb\WeChat\BasicService\Media\Client                     $media
+ * @property \Surpaimb\WeChat\BasicService\Url\Client                       $url
+ * @property \Surpaimb\WeChat\BasicService\QrCode\Client                    $qrcode
+ * @property \Surpaimb\WeChat\BasicService\Jssdk\Client                     $jssdk
+ * @property \Surpaimb\WeChat\OfficialAccount\Auth\AccessToken              $access_token
+ * @property \Surpaimb\WeChat\OfficialAccount\Server\Guard                  $server
+ * @property \Surpaimb\WeChat\OfficialAccount\User\UserClient               $user
+ * @property \Surpaimb\WeChat\OfficialAccount\User\TagClient                $user_tag
+ * @property \Surpaimb\WeChat\OfficialAccount\Menu\Client                   $menu
+ * @property \Surpaimb\WeChat\OfficialAccount\TemplateMessage\Client        $template_message
+ * @property \Surpaimb\WeChat\OfficialAccount\SubscribeMessage\Client       $subscribe_message
+ * @property \Surpaimb\WeChat\OfficialAccount\Material\Client               $material
+ * @property \Surpaimb\WeChat\OfficialAccount\CustomerService\Client        $customer_service
+ * @property \Surpaimb\WeChat\OfficialAccount\CustomerService\SessionClient $customer_service_session
+ * @property \Surpaimb\WeChat\OfficialAccount\Semantic\Client               $semantic
+ * @property \Surpaimb\WeChat\OfficialAccount\DataCube\Client               $data_cube
+ * @property \Surpaimb\WeChat\OfficialAccount\AutoReply\Client              $auto_reply
+ * @property \Surpaimb\WeChat\OfficialAccount\Broadcasting\Client           $broadcasting
+ * @property \Surpaimb\WeChat\OfficialAccount\Card\Card                     $card
+ * @property \Surpaimb\WeChat\OfficialAccount\Device\Client                 $device
+ * @property \Surpaimb\WeChat\OfficialAccount\ShakeAround\ShakeAround       $shake_around
+ * @property \Surpaimb\WeChat\OfficialAccount\POI\Client                    $poi
+ * @property \Surpaimb\WeChat\OfficialAccount\Store\Client                  $store
+ * @property \Surpaimb\WeChat\OfficialAccount\Base\Client                   $base
+ * @property \Surpaimb\WeChat\OfficialAccount\Comment\Client                $comment
+ * @property \Surpaimb\WeChat\OfficialAccount\OCR\Client                    $ocr
+ * @property \Surpaimb\WeChat\OfficialAccount\Goods\Client                  $goods
  * @property \Overtrue\Socialite\Providers\WeChat                      $oauth
- * @property \EasyWeChat\OfficialAccount\WiFi\Client                   $wifi
- * @property \EasyWeChat\OfficialAccount\WiFi\CardClient               $wifi_card
- * @property \EasyWeChat\OfficialAccount\WiFi\DeviceClient             $wifi_device
- * @property \EasyWeChat\OfficialAccount\WiFi\ShopClient               $wifi_shop
- * @property \EasyWeChat\OfficialAccount\Guide\Client                  $guide
- * @property \EasyWeChat\OfficialAccount\Draft\Client                  $draft
- * @property \EasyWeChat\OfficialAccount\FreePublish\Client            $free_publish
+ * @property \Surpaimb\WeChat\OfficialAccount\WiFi\Client                   $wifi
+ * @property \Surpaimb\WeChat\OfficialAccount\WiFi\CardClient               $wifi_card
+ * @property \Surpaimb\WeChat\OfficialAccount\WiFi\DeviceClient             $wifi_device
+ * @property \Surpaimb\WeChat\OfficialAccount\WiFi\ShopClient               $wifi_shop
+ * @property \Surpaimb\WeChat\OfficialAccount\Guide\Client                  $guide
+ * @property \Surpaimb\WeChat\OfficialAccount\Draft\Client                  $draft
+ * @property \Surpaimb\WeChat\OfficialAccount\FreePublish\Client            $free_publish
  */
 class Application extends ServiceContainer
 {

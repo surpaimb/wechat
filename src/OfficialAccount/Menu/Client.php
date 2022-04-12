@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Menu;
+namespace Surpaimb\WeChat\OfficialAccount\Menu;
 
-use EasyWeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -25,7 +25,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function list()
     {
@@ -37,7 +37,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function current()
     {
@@ -52,7 +52,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function create(array $buttons, array $matchRule = [])
@@ -74,7 +74,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function delete(int $menuId = null)
@@ -93,7 +93,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function match(string $userId)

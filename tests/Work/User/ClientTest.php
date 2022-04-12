@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work\User;
+namespace Surpaimb\WeChat\Tests\Work\User;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\User\Client;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
+use Surpaimb\WeChat\Tests\TestCase;
+use Surpaimb\WeChat\Work\User\Client;
 
 class ClientTest extends TestCase
 {

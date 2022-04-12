@@ -9,23 +9,23 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MicroMerchant;
+namespace Surpaimb\WeChat\MicroMerchant;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Kernel\Support;
-use EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\Kernel\Support;
+use Surpaimb\WeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException;
 
 /**
  * Class Application.
  *
  * @author liuml <liumenglei0211@gmail.com>
  *
- * @property \EasyWeChat\MicroMerchant\Certficates\Client    $certficates
- * @property \EasyWeChat\MicroMerchant\Material\Client       $material
- * @property \EasyWeChat\MicroMerchant\MerchantConfig\Client $merchantConfig
- * @property \EasyWeChat\MicroMerchant\Withdraw\Client       $withdraw
- * @property \EasyWeChat\MicroMerchant\Media\Client          $media
+ * @property \Surpaimb\WeChat\MicroMerchant\Certficates\Client    $certficates
+ * @property \Surpaimb\WeChat\MicroMerchant\Material\Client       $material
+ * @property \Surpaimb\WeChat\MicroMerchant\MerchantConfig\Client $merchantConfig
+ * @property \Surpaimb\WeChat\MicroMerchant\Withdraw\Client       $withdraw
+ * @property \Surpaimb\WeChat\MicroMerchant\Media\Client          $media
  *
  * @method mixed submitApplication(array $params)
  * @method mixed getStatus(string $applymentId, string $businessCode = '')
@@ -76,7 +76,7 @@ class Application extends ServiceContainer
     /**
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      */
     public function getKey()
     {
@@ -136,8 +136,8 @@ class Application extends ServiceContainer
      *
      * @return bool
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException
      */
     public function verifySignature(array $data)
     {

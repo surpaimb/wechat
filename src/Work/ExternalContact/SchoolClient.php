@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\ExternalContact;
+namespace Surpaimb\WeChat\Work\ExternalContact;
 
-use EasyWeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -30,8 +30,8 @@ class SchoolClient extends BaseClient
      * @param int $registerYear
      * @param int $order
      * @param array $departmentAdmins [['userid':'139','type':1],['userid':'1399','type':2]]
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function createDepartment(string $name, int $parentId, int $type, int $standardGrade, int $registerYear, int $order, array $departmentAdmins)
     {
@@ -59,8 +59,8 @@ class SchoolClient extends BaseClient
      * @param int $registerYear
      * @param int $order
      * @param array $departmentAdmins [['op':0,'userid':'139','type':1],['op':1,'userid':'1399','type':2]] OP=0表示新增或更新，OP=1表示删除管理员
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function updateDepartment(int $id, string $name, int $parentId, int $type, int $standardGrade, int $registerYear, int $order, array $departmentAdmins)
     {
@@ -83,8 +83,8 @@ class SchoolClient extends BaseClient
      * 删除部门
      * @see https://work.weixin.qq.com/api/doc/90000/90135/92342
      * @param int $id
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function deleteDepartment(int $id)
     {
@@ -97,8 +97,8 @@ class SchoolClient extends BaseClient
      * 获取部门列表
      * @see https://work.weixin.qq.com/api/doc/90000/90135/92343
      * @param int $id 如果ID为0，则获取全量组织架构
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function getDepartments(int $id)
     {
@@ -119,8 +119,8 @@ class SchoolClient extends BaseClient
      * @param string $userId
      * @param string $name
      * @param array $department
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function createStudent(string $userId, string $name, array $department)
     {
@@ -137,8 +137,8 @@ class SchoolClient extends BaseClient
      * 删除学生
      * @see https://work.weixin.qq.com/api/doc/90000/90135/92326
      * @param string $userId
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function deleteStudent(string $userId)
     {
@@ -154,8 +154,8 @@ class SchoolClient extends BaseClient
      * @param string $name
      * @param string $newUserId
      * @param array $department
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function updateStudent(string $userId, string $name, string $newUserId, array $department)
     {
@@ -179,8 +179,8 @@ class SchoolClient extends BaseClient
      * 批量创建学生，学生最多100个
      * @see https://work.weixin.qq.com/api/doc/90000/90135/92328
      * @param array $students 学生格式：[[student_userid:'','name':'','department':[1,2]],['student_userid':'','name':'','department':[1,2]]]
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function batchCreateStudents(array $students)
     {
@@ -195,8 +195,8 @@ class SchoolClient extends BaseClient
      * 批量删除学生，每次最多100个学生
      * @see https://work.weixin.qq.com/api/doc/90000/90135/92329
      * @param array $useridList 学生USERID，格式：['zhangsan','lisi']
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function batchDeleteStudents(array $useridList)
     {
@@ -209,8 +209,8 @@ class SchoolClient extends BaseClient
      * 批量更新学生，每次最多100个
      * @see https://open.work.weixin.qq.com/api/doc/90001/90143/92042
      * @param array $students 格式：[['student_userid':'lisi','new_student_userid':'lisi2','name':'','department':[1,2]],.....]
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function batchUpdateStudents(array $students)
     {
@@ -226,8 +226,8 @@ class SchoolClient extends BaseClient
      * @param string $mobile
      * @param bool $toInvite
      * @param array $children
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function createParent(string $userId, string $mobile, bool $toInvite, array $children)
     {
@@ -245,8 +245,8 @@ class SchoolClient extends BaseClient
      * 删除家长
      * @see https://open.work.weixin.qq.com/api/doc/90001/90143/92079
      * @param string $userId
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function deleteParent(string $userId)
     {
@@ -262,8 +262,8 @@ class SchoolClient extends BaseClient
      * @param string $mobile
      * @param string $newUserId
      * @param array $children 格式：[['student_userid':'','relation':''],[]]
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function updateParent(string $userId, string $mobile, string $newUserId, array $children)
     {
@@ -287,8 +287,8 @@ class SchoolClient extends BaseClient
      * 批量创建家长 每次最多100个
      * @see https://open.work.weixin.qq.com/api/doc/90001/90143/92078
      * @param array $parents [['parent_userid':'','mobile':'','to_invite':true,'children':['student_userid':'','relation':'']],.....]
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function batchCreateParents(array $parents)
     {
@@ -301,8 +301,8 @@ class SchoolClient extends BaseClient
      * 批量删除家长，每次最多100个
      * @see https://open.work.weixin.qq.com/api/doc/90001/90143/92080
      * @param array $userIdList 格式：['chang','lisi']
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function batchDeleteParents(array $userIdList)
     {
@@ -315,8 +315,8 @@ class SchoolClient extends BaseClient
      * 批量更新家长，每次最多100个
      * @see https://open.work.weixin.qq.com/api/doc/90001/90143/92082
      * @param array $parents 格式：[['parent_userid':'','new_parent_userid':'','mobile':'','children':[['student_userid':'','relation':''],...]],.....]
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function batchUpdateParents(array $parents)
     {
@@ -329,8 +329,8 @@ class SchoolClient extends BaseClient
      * 读取学生或家长
      * @see https://open.work.weixin.qq.com/api/doc/90001/90143/92038
      * @param string $userId 学生或家长的userid
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function getUser(string $userId)
     {
@@ -344,8 +344,8 @@ class SchoolClient extends BaseClient
      * @see https://open.work.weixin.qq.com/api/doc/90001/90143/92038
      * @param int $departmentId
      * @param bool $fetchChild
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function getStudents(int $departmentId, bool $fetchChild)
     {
@@ -364,8 +364,8 @@ class SchoolClient extends BaseClient
     /**
      * 获取学校通知二维码
      * @see https://open.work.weixin.qq.com/api/doc/90001/90143/92197
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function getSubscribeQrCode()
     {
@@ -376,8 +376,8 @@ class SchoolClient extends BaseClient
      * 设置关注学校通知的模式
      * @see https://open.work.weixin.qq.com/api/doc/90001/90143/92290
      * @param int $mode 关注模式，1可扫码填写资料加入，2禁止扫码填写资料加入
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function setSubscribeMode(int $mode)
     {
@@ -389,8 +389,8 @@ class SchoolClient extends BaseClient
     /**
      * 获取关注学校通知的模式
      * @see https://open.work.weixin.qq.com/api/doc/90001/90143/92290
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function getSubscribeMode()
     {
@@ -401,8 +401,8 @@ class SchoolClient extends BaseClient
      * 设置【老师可查看班级】的模式
      * @see https://open.work.weixin.qq.com/api/doc/90001/90143/92652
      * @param int $mode
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function setTeacherViewMode(int $mode)
     {
@@ -414,8 +414,8 @@ class SchoolClient extends BaseClient
     /**
      * 获取【老师可查看班级】的模式
      * @see https://open.work.weixin.qq.com/api/doc/90001/90143/92652
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function getTeacherViewMode()
     {

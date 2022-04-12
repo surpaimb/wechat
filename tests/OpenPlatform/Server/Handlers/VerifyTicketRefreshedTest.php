@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenPlatform;
+namespace Surpaimb\WeChat\Tests\OpenPlatform;
 
-use EasyWeChat\OpenPlatform\Application;
-use EasyWeChat\OpenPlatform\Auth\VerifyTicket;
-use EasyWeChat\OpenPlatform\Server\Handlers\VerifyTicketRefreshed;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\OpenPlatform\Application;
+use Surpaimb\WeChat\OpenPlatform\Auth\VerifyTicket;
+use Surpaimb\WeChat\OpenPlatform\Server\Handlers\VerifyTicketRefreshed;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class VerifyTicketRefreshedTest extends TestCase
 {

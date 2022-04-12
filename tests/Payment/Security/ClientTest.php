@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Payment\Security;
+namespace Surpaimb\WeChat\Tests\Payment\Security;
 
-use EasyWeChat\Payment\Application;
-use EasyWeChat\Payment\Security\Client;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Payment\Application;
+use Surpaimb\WeChat\Payment\Security\Client;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {
@@ -22,7 +22,7 @@ class ClientTest extends TestCase
      *
      * @param array $config
      *
-     * @return \EasyWeChat\Payment\Application
+     * @return \Surpaimb\WeChat\Payment\Application
      */
     private function makeApp($config = [])
     {

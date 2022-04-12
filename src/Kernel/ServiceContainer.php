@@ -9,14 +9,14 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel;
+namespace Surpaimb\WeChat\Kernel;
 
-use EasyWeChat\Kernel\Providers\ConfigServiceProvider;
-use EasyWeChat\Kernel\Providers\EventDispatcherServiceProvider;
-use EasyWeChat\Kernel\Providers\ExtensionServiceProvider;
-use EasyWeChat\Kernel\Providers\HttpClientServiceProvider;
-use EasyWeChat\Kernel\Providers\LogServiceProvider;
-use EasyWeChat\Kernel\Providers\RequestServiceProvider;
+use Surpaimb\WeChat\Kernel\Providers\ConfigServiceProvider;
+use Surpaimb\WeChat\Kernel\Providers\EventDispatcherServiceProvider;
+use Surpaimb\WeChat\Kernel\Providers\ExtensionServiceProvider;
+use Surpaimb\WeChat\Kernel\Providers\HttpClientServiceProvider;
+use Surpaimb\WeChat\Kernel\Providers\LogServiceProvider;
+use Surpaimb\WeChat\Kernel\Providers\RequestServiceProvider;
 use EasyWeChatComposer\Traits\WithAggregator;
 use Pimple\Container;
 
@@ -25,7 +25,7 @@ use Pimple\Container;
  *
  * @author overtrue <i@overtrue.me>
  *
- * @property \EasyWeChat\Kernel\Config                          $config
+ * @property \Surpaimb\WeChat\Kernel\Config                          $config
  * @property \Symfony\Component\HttpFoundation\Request          $request
  * @property \GuzzleHttp\Client                                 $http_client
  * @property \Monolog\Logger                                    $logger

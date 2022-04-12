@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Support;
+namespace Surpaimb\WeChat\Kernel\Support;
 
 use ArrayAccess;
 use ArrayIterator;
-use EasyWeChat\Kernel\Contracts\Arrayable;
+use Surpaimb\WeChat\Kernel\Contracts\Arrayable;
 use IteratorAggregate;
 
 /**

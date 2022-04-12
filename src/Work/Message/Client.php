@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\Message;
+namespace Surpaimb\WeChat\Work\Message;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Messages\Message;
+use Surpaimb\WeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\Messages\Message;
 
 /**
  * Class Client.
@@ -22,11 +22,11 @@ use EasyWeChat\Kernel\Messages\Message;
 class Client extends BaseClient
 {
     /**
-     * @param string|\EasyWeChat\Kernel\Messages\Message $message
+     * @param string|\Surpaimb\WeChat\Kernel\Messages\Message $message
      *
-     * @return \EasyWeChat\Work\Message\Messenger
+     * @return \Surpaimb\WeChat\Work\Message\Messenger
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      */
     public function message($message)
     {
@@ -36,9 +36,9 @@ class Client extends BaseClient
     /**
      * @param array $message
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function send(array $message)
@@ -56,9 +56,9 @@ class Client extends BaseClient
      * @param string $taskId
      * @param string $replaceName
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      */

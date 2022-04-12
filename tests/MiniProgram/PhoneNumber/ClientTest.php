@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\MiniProgram\PhoneNumber;
+namespace Surpaimb\WeChat\Tests\MiniProgram\PhoneNumber;
 
-use EasyWeChat\MiniProgram\PhoneNumber\Client;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\MiniProgram\PhoneNumber\Client;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

@@ -1,24 +1,24 @@
 <?php
 
-namespace EasyWeChat\OpenPlatform;
+namespace Surpaimb\WeChat\OpenPlatform;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Kernel\Traits\ResponseCastable;
-use EasyWeChat\MiniProgram\Encryptor;
-use EasyWeChat\OpenPlatform\Authorizer\Auth\AccessToken;
-use EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Application as MiniProgram;
-use EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Auth\Client;
-use EasyWeChat\OpenPlatform\Authorizer\OfficialAccount\Account\Client as AccountClient;
-use EasyWeChat\OpenPlatform\Authorizer\OfficialAccount\Application as OfficialAccount;
-use EasyWeChat\OpenPlatform\Authorizer\Server\Guard;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\Kernel\Traits\ResponseCastable;
+use Surpaimb\WeChat\MiniProgram\Encryptor;
+use Surpaimb\WeChat\OpenPlatform\Authorizer\Auth\AccessToken;
+use Surpaimb\WeChat\OpenPlatform\Authorizer\MiniProgram\Application as MiniProgram;
+use Surpaimb\WeChat\OpenPlatform\Authorizer\MiniProgram\Auth\Client;
+use Surpaimb\WeChat\OpenPlatform\Authorizer\OfficialAccount\Account\Client as AccountClient;
+use Surpaimb\WeChat\OpenPlatform\Authorizer\OfficialAccount\Application as OfficialAccount;
+use Surpaimb\WeChat\OpenPlatform\Authorizer\Server\Guard;
 
-use function EasyWeChat\Kernel\data_get;
+use function Surpaimb\WeChat\Kernel\data_get;
 
 /**
- * @property \EasyWeChat\OpenPlatform\Server\Guard        $server
- * @property \EasyWeChat\OpenPlatform\Auth\AccessToken    $access_token
- * @property \EasyWeChat\OpenPlatform\CodeTemplate\Client $code_template
- * @property \EasyWeChat\OpenPlatform\Component\Client    $component
+ * @property \Surpaimb\WeChat\OpenPlatform\Server\Guard        $server
+ * @property \Surpaimb\WeChat\OpenPlatform\Auth\AccessToken    $access_token
+ * @property \Surpaimb\WeChat\OpenPlatform\CodeTemplate\Client $code_template
+ * @property \Surpaimb\WeChat\OpenPlatform\Component\Client    $component
  *
  * @method mixed handleAuthorize(string $authCode = null)
  * @method mixed getAuthorizer(string $appId)
@@ -57,9 +57,9 @@ class Application extends ServiceContainer
      *
      * @param  string                                                     $appId
      * @param  string|null                                                $refreshToken
-     * @param  \EasyWeChat\OpenPlatform\Authorizer\Auth\AccessToken|null  $accessToken
+     * @param  \Surpaimb\WeChat\OpenPlatform\Authorizer\Auth\AccessToken|null  $accessToken
      *
-     * @return \EasyWeChat\OpenPlatform\Authorizer\OfficialAccount\Application
+     * @return \Surpaimb\WeChat\OpenPlatform\Authorizer\OfficialAccount\Application
      */
     public function officialAccount(
         string $appId,
@@ -100,9 +100,9 @@ class Application extends ServiceContainer
      *
      * @param  string                                                     $appId
      * @param  string|null                                                $refreshToken
-     * @param  \EasyWeChat\OpenPlatform\Authorizer\Auth\AccessToken|null  $accessToken
+     * @param  \Surpaimb\WeChat\OpenPlatform\Authorizer\Auth\AccessToken|null  $accessToken
      *
-     * @return \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Application
+     * @return \Surpaimb\WeChat\OpenPlatform\Authorizer\MiniProgram\Application
      */
     public function miniProgram(
         string $appId,
@@ -134,7 +134,7 @@ class Application extends ServiceContainer
      * @param  string|array|null  $optional
      *
      * @return string
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\RuntimeException
      */
     public function getPreAuthorizationUrl(string $callbackUrl, $optional = []): string
     {
@@ -165,7 +165,7 @@ class Application extends ServiceContainer
      * @param  string|array|null  $optional
      *
      * @return string
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\RuntimeException
      */
     public function getMobilePreAuthorizationUrl(string $callbackUrl, $optional = []): string
     {
@@ -211,7 +211,7 @@ class Application extends ServiceContainer
     }
 
     /**
-     * @param  \EasyWeChat\OpenPlatform\Authorizer\Auth\AccessToken|null  $accessToken
+     * @param  \Surpaimb\WeChat\OpenPlatform\Authorizer\Auth\AccessToken|null  $accessToken
      *
      * @return array
      */

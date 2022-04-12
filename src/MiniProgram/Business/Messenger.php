@@ -5,12 +5,12 @@
  *
  */
 
-namespace EasyWeChat\MiniProgram\Business;
+namespace Surpaimb\WeChat\MiniProgram\Business;
 
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\Messages\Message;
-use EasyWeChat\Kernel\Messages\Raw as RawMessage;
-use EasyWeChat\Kernel\Messages\Text;
+use Surpaimb\WeChat\Kernel\Exceptions\RuntimeException;
+use Surpaimb\WeChat\Kernel\Messages\Message;
+use Surpaimb\WeChat\Kernel\Messages\Raw as RawMessage;
+use Surpaimb\WeChat\Kernel\Messages\Text;
 
 /**
  * Class MessageBuilder.
@@ -22,7 +22,7 @@ class Messenger
     /**
      * Messages to send.
      *
-     * @var \EasyWeChat\Kernel\Messages\Message;
+     * @var \Surpaimb\WeChat\Kernel\Messages\Message;
      */
     protected $message;
 
@@ -43,7 +43,7 @@ class Messenger
     /**
      * Customer service instance.
      *
-     * @var \EasyWeChat\MiniProgram\Business\Client
+     * @var \Surpaimb\WeChat\MiniProgram\Business\Client
      */
     protected $client;
 
@@ -57,7 +57,7 @@ class Messenger
     /**
      * MessageBuilder constructor.
      *
-     * @param \EasyWeChat\MiniProgram\Business\Client $client
+     * @param \Surpaimb\WeChat\MiniProgram\Business\Client $client
      */
     public function __construct(Client $client)
     {
@@ -133,11 +133,11 @@ class Messenger
     /**
      * Send the message.
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\RuntimeException
      */
     public function send()
     {

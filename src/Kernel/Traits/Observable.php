@@ -9,14 +9,14 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Traits;
+namespace Surpaimb\WeChat\Kernel\Traits;
 
-use EasyWeChat\Kernel\Clauses\Clause;
-use EasyWeChat\Kernel\Contracts\EventHandlerInterface;
-use EasyWeChat\Kernel\Decorators\FinallyResult;
-use EasyWeChat\Kernel\Decorators\TerminateResult;
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\Kernel\Clauses\Clause;
+use Surpaimb\WeChat\Kernel\Contracts\EventHandlerInterface;
+use Surpaimb\WeChat\Kernel\Decorators\FinallyResult;
+use Surpaimb\WeChat\Kernel\Decorators\TerminateResult;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
 
 /**
  * Trait Observable.
@@ -39,9 +39,9 @@ trait Observable
      * @param \Closure|EventHandlerInterface|callable|string $handler
      * @param \Closure|EventHandlerInterface|callable|string $condition
      *
-     * @return \EasyWeChat\Kernel\Clauses\Clause
+     * @return \Surpaimb\WeChat\Kernel\Clauses\Clause
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      * @throws \ReflectionException
      */
     public function push($handler, $condition = '*')
@@ -73,9 +73,9 @@ trait Observable
      * @param \Closure|EventHandlerInterface|string $handler
      * @param \Closure|EventHandlerInterface|string $condition
      *
-     * @return \EasyWeChat\Kernel\Clauses\Clause
+     * @return \Surpaimb\WeChat\Kernel\Clauses\Clause
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      * @throws \ReflectionException
      */
     public function unshift($handler, $condition = '*')
@@ -95,9 +95,9 @@ trait Observable
      * @param string                                $condition
      * @param \Closure|EventHandlerInterface|string $handler
      *
-     * @return \EasyWeChat\Kernel\Clauses\Clause
+     * @return \Surpaimb\WeChat\Kernel\Clauses\Clause
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      * @throws \ReflectionException
      */
     public function observe($condition, $handler)
@@ -109,9 +109,9 @@ trait Observable
      * @param string                                $condition
      * @param \Closure|EventHandlerInterface|string $handler
      *
-     * @return \EasyWeChat\Kernel\Clauses\Clause
+     * @return \Surpaimb\WeChat\Kernel\Clauses\Clause
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      * @throws \ReflectionException
      */
     public function on($condition, $handler)
@@ -179,7 +179,7 @@ trait Observable
     /**
      * @param mixed $handler
      *
-     * @return \EasyWeChat\Kernel\Clauses\Clause
+     * @return \Surpaimb\WeChat\Kernel\Clauses\Clause
      */
     protected function newClause($handler): Clause
     {
@@ -233,7 +233,7 @@ trait Observable
      *
      * @return \Closure
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      * @throws \ReflectionException
      */
     protected function makeClosure($handler)
@@ -271,7 +271,7 @@ trait Observable
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      * @throws \ReflectionException
      */
     protected function resolveHandlerAndCondition($handler, $condition): array

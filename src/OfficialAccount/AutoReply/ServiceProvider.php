@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\AutoReply;
+namespace Surpaimb\WeChat\OfficialAccount\AutoReply;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

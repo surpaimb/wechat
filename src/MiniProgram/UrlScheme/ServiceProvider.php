@@ -1,6 +1,6 @@
 <?php
 
-namespace EasyWeChat\MiniProgram\UrlScheme;
+namespace Surpaimb\WeChat\MiniProgram\UrlScheme;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

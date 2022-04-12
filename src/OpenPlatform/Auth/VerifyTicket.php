@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Auth;
+namespace Surpaimb\WeChat\OpenPlatform\Auth;
 
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\Traits\InteractsWithCache;
-use EasyWeChat\OpenPlatform\Application;
+use Surpaimb\WeChat\Kernel\Exceptions\RuntimeException;
+use Surpaimb\WeChat\Kernel\Traits\InteractsWithCache;
+use Surpaimb\WeChat\OpenPlatform\Application;
 
 /**
  * Class VerifyTicket.
@@ -25,14 +25,14 @@ class VerifyTicket
     use InteractsWithCache;
 
     /**
-     * @var \EasyWeChat\OpenPlatform\Application
+     * @var \Surpaimb\WeChat\OpenPlatform\Application
      */
     protected $app;
 
     /**
      * Constructor.
      *
-     * @param \EasyWeChat\OpenPlatform\Application $app
+     * @param \Surpaimb\WeChat\OpenPlatform\Application $app
      */
     public function __construct(Application $app)
     {
@@ -46,8 +46,8 @@ class VerifyTicket
      *
      * @return $this
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\RuntimeException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function setTicket(string $ticket)
@@ -66,8 +66,8 @@ class VerifyTicket
      *
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\RuntimeException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function getTicket(): string

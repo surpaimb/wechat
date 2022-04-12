@@ -1,8 +1,8 @@
 <?php
 
-namespace EasyWeChat\Work\OAuth;
+namespace Surpaimb\WeChat\Work\OAuth;
 
-use EasyWeChat\Work\Application;
+use Surpaimb\WeChat\Work\Application;
 use Overtrue\Socialite\Contracts\ProviderInterface;
 use Overtrue\Socialite\SocialiteManager;
 use Symfony\Component\HttpFoundation\RedirectResponse;

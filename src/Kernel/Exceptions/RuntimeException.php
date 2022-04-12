@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Exceptions;
+namespace Surpaimb\WeChat\Kernel\Exceptions;
 
 /**
  * Class RuntimeException.

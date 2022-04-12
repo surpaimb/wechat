@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MicroMerchant\MerchantConfig;
+namespace Surpaimb\WeChat\MicroMerchant\MerchantConfig;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

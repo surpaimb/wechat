@@ -1,13 +1,13 @@
 <?php
 
-namespace EasyWeChat\MiniProgram\Shop\Order;
+namespace Surpaimb\WeChat\MiniProgram\Shop\Order;
 
-use EasyWeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\BaseClient;
 
 /**
  * 自定义版交易组件及开放接口 - 订单接口
  *
- * @package EasyWeChat\MiniProgram\Shop\Order
+ * @package Surpaimb\WeChat\MiniProgram\Shop\Order
  * @author HaoLiang <haoliang@qiyuankeji.cn>
  */
 class Client extends BaseClient
@@ -16,8 +16,8 @@ class Client extends BaseClient
      * 检查场景值是否在支付校验范围内
      *
      * @param int $scene 场景值
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function sceneCheck(int $scene)
@@ -29,8 +29,8 @@ class Client extends BaseClient
      * 生成订单
      *
      * @param array $order
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function add(array $order)
@@ -43,8 +43,8 @@ class Client extends BaseClient
      *
      * @param string $openid 用户的openid
      * @param array $orderId 微信侧订单id （订单id二选一）
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function get(string $openid, array $orderId)
@@ -56,8 +56,8 @@ class Client extends BaseClient
      * 同步订单支付结果
      *
      * @param array $pay
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function pay(array $pay)

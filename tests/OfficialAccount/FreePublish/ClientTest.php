@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OfficialAccount\FreePublish;
+namespace Surpaimb\WeChat\Tests\OfficialAccount\FreePublish;
 
-use EasyWeChat\OfficialAccount\FreePublish\Client;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\OfficialAccount\FreePublish\Client;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

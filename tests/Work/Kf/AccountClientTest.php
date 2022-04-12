@@ -9,15 +9,15 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work\Kf;
+namespace Surpaimb\WeChat\Tests\Work\Kf;
 
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\Kf\AccountClient;
+use Surpaimb\WeChat\Tests\TestCase;
+use Surpaimb\WeChat\Work\Kf\AccountClient;
 
 /**
  * Class ClientTest.
  *
- * @package EasyWeChat\Tests\Work\Live
+ * @package Surpaimb\WeChat\Tests\Work\Live
  *
  * @author 读心印 <aa24615@qq.com>
  */

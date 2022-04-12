@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\BasicService\ContentSecurity;
+namespace Surpaimb\WeChat\BasicService\ContentSecurity;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

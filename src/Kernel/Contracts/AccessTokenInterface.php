@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Contracts;
+namespace Surpaimb\WeChat\Kernel\Contracts;
 
 use Psr\Http\Message\RequestInterface;
 
@@ -26,7 +26,7 @@ interface AccessTokenInterface
     public function getToken(): array;
 
     /**
-     * @return \EasyWeChat\Kernel\Contracts\AccessTokenInterface
+     * @return \Surpaimb\WeChat\Kernel\Contracts\AccessTokenInterface
      */
     public function refresh(): self;
 

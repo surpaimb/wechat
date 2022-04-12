@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\Message;
+namespace Surpaimb\WeChat\Work\Message;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\Messages\Message;
-use EasyWeChat\Kernel\Messages\Text;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
+use Surpaimb\WeChat\Kernel\Exceptions\RuntimeException;
+use Surpaimb\WeChat\Kernel\Messages\Message;
+use Surpaimb\WeChat\Kernel\Messages\Text;
 
 /**
  * Class MessageBuilder.
@@ -24,7 +24,7 @@ use EasyWeChat\Kernel\Messages\Text;
 class Messenger
 {
     /**
-     * @var \EasyWeChat\Kernel\Messages\Message;
+     * @var \Surpaimb\WeChat\Kernel\Messages\Message;
      */
     protected $message;
 
@@ -44,14 +44,14 @@ class Messenger
     protected $secretive = false;
 
     /**
-     * @var \EasyWeChat\Work\Message\Client
+     * @var \Surpaimb\WeChat\Work\Message\Client
      */
     protected $client;
 
     /**
      * MessageBuilder constructor.
      *
-     * @param \EasyWeChat\Work\Message\Client $client
+     * @param \Surpaimb\WeChat\Work\Message\Client $client
      */
     public function __construct(Client $client)
     {
@@ -63,9 +63,9 @@ class Messenger
      *
      * @param string|Message $message
      *
-     * @return \EasyWeChat\Work\Message\Messenger
+     * @return \Surpaimb\WeChat\Work\Message\Messenger
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      */
     public function message($message)
     {
@@ -85,7 +85,7 @@ class Messenger
     /**
      * @param int $agentId
      *
-     * @return \EasyWeChat\Work\Message\Messenger
+     * @return \Surpaimb\WeChat\Work\Message\Messenger
      */
     public function ofAgent(int $agentId)
     {
@@ -97,7 +97,7 @@ class Messenger
     /**
      * @param array|string $userIds
      *
-     * @return \EasyWeChat\Work\Message\Messenger
+     * @return \Surpaimb\WeChat\Work\Message\Messenger
      */
     public function toUser($userIds)
     {
@@ -107,7 +107,7 @@ class Messenger
     /**
      * @param array|string $partyIds
      *
-     * @return \EasyWeChat\Work\Message\Messenger
+     * @return \Surpaimb\WeChat\Work\Message\Messenger
      */
     public function toParty($partyIds)
     {
@@ -117,7 +117,7 @@ class Messenger
     /**
      * @param array|string $tagIds
      *
-     * @return \EasyWeChat\Work\Message\Messenger
+     * @return \Surpaimb\WeChat\Work\Message\Messenger
      */
     public function toTag($tagIds)
     {
@@ -127,7 +127,7 @@ class Messenger
     /**
      * Keep secret.
      *
-     * @return \EasyWeChat\Work\Message\Messenger
+     * @return \Surpaimb\WeChat\Work\Message\Messenger
      */
     public function secretive()
     {
@@ -140,7 +140,7 @@ class Messenger
      * @param array|string $ids
      * @param string       $key
      *
-     * @return \EasyWeChat\Work\Message\Messenger
+     * @return \Surpaimb\WeChat\Work\Message\Messenger
      */
     protected function setRecipients($ids, string $key): self
     {
@@ -154,12 +154,12 @@ class Messenger
     }
 
     /**
-     * @param \EasyWeChat\Kernel\Messages\Message|string|null $message
+     * @param \Surpaimb\WeChat\Kernel\Messages\Message|string|null $message
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      */
     public function send($message = null)
     {

@@ -9,48 +9,48 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work;
+namespace Surpaimb\WeChat\Work;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Work\MiniProgram\Application as MiniProgram;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\Work\MiniProgram\Application as MiniProgram;
 
 /**
  * Application.
  *
  * @author mingyoung <mingyoungcheung@gmail.com>
  *
- * @property \EasyWeChat\Work\OA\Client                             $oa
- * @property \EasyWeChat\Work\Auth\AccessToken                      $access_token
- * @property \EasyWeChat\Work\Agent\Client                          $agent
- * @property \EasyWeChat\Work\Department\Client                     $department
- * @property \EasyWeChat\Work\Media\Client                          $media
- * @property \EasyWeChat\Work\Menu\Client                           $menu
- * @property \EasyWeChat\Work\Message\Client                        $message
- * @property \EasyWeChat\Work\Message\Messenger                     $messenger
- * @property \EasyWeChat\Work\User\Client                           $user
- * @property \EasyWeChat\Work\User\TagClient                        $tag
- * @property \EasyWeChat\Work\Server\Guard                          $server
- * @property \EasyWeChat\Work\Jssdk\Client                          $jssdk
+ * @property \Surpaimb\WeChat\Work\OA\Client                             $oa
+ * @property \Surpaimb\WeChat\Work\Auth\AccessToken                      $access_token
+ * @property \Surpaimb\WeChat\Work\Agent\Client                          $agent
+ * @property \Surpaimb\WeChat\Work\Department\Client                     $department
+ * @property \Surpaimb\WeChat\Work\Media\Client                          $media
+ * @property \Surpaimb\WeChat\Work\Menu\Client                           $menu
+ * @property \Surpaimb\WeChat\Work\Message\Client                        $message
+ * @property \Surpaimb\WeChat\Work\Message\Messenger                     $messenger
+ * @property \Surpaimb\WeChat\Work\User\Client                           $user
+ * @property \Surpaimb\WeChat\Work\User\TagClient                        $tag
+ * @property \Surpaimb\WeChat\Work\Server\Guard                          $server
+ * @property \Surpaimb\WeChat\Work\Jssdk\Client                          $jssdk
  * @property \Overtrue\Socialite\Providers\WeWork                   $oauth
- * @property \EasyWeChat\Work\Invoice\Client                        $invoice
- * @property \EasyWeChat\Work\Chat\Client                           $chat
- * @property \EasyWeChat\Work\ExternalContact\Client                $external_contact
- * @property \EasyWeChat\Work\ExternalContact\ContactWayClient      $contact_way
- * @property \EasyWeChat\Work\ExternalContact\StatisticsClient      $external_contact_statistics
- * @property \EasyWeChat\Work\ExternalContact\MessageClient         $external_contact_message
- * @property \EasyWeChat\Work\GroupRobot\Client                     $group_robot
- * @property \EasyWeChat\Work\GroupRobot\Messenger                  $group_robot_messenger
- * @property \EasyWeChat\Work\Calendar\Client                       $calendar
- * @property \EasyWeChat\Work\Schedule\Client                       $schedule
- * @property \EasyWeChat\Work\MsgAudit\Client                       $msg_audit
- * @property \EasyWeChat\Work\Live\Client                           $live
- * @property \EasyWeChat\Work\CorpGroup\Client                      $corp_group
- * @property \EasyWeChat\Work\ExternalContact\SchoolClient          $school
- * @property \EasyWeChat\Work\ExternalContact\MessageTemplateClient $external_contact_message_template
- * @property \EasyWeChat\Work\Kf\AccountClient                      $kf_account
- * @property \EasyWeChat\Work\Kf\ServicerClient                     $kf_servicer
- * @property \EasyWeChat\Work\Kf\MessageClient                      $kf_message
- * @property \EasyWeChat\Work\GroupWelcomeTemplate\Client           $group_welcome_templage
+ * @property \Surpaimb\WeChat\Work\Invoice\Client                        $invoice
+ * @property \Surpaimb\WeChat\Work\Chat\Client                           $chat
+ * @property \Surpaimb\WeChat\Work\ExternalContact\Client                $external_contact
+ * @property \Surpaimb\WeChat\Work\ExternalContact\ContactWayClient      $contact_way
+ * @property \Surpaimb\WeChat\Work\ExternalContact\StatisticsClient      $external_contact_statistics
+ * @property \Surpaimb\WeChat\Work\ExternalContact\MessageClient         $external_contact_message
+ * @property \Surpaimb\WeChat\Work\GroupRobot\Client                     $group_robot
+ * @property \Surpaimb\WeChat\Work\GroupRobot\Messenger                  $group_robot_messenger
+ * @property \Surpaimb\WeChat\Work\Calendar\Client                       $calendar
+ * @property \Surpaimb\WeChat\Work\Schedule\Client                       $schedule
+ * @property \Surpaimb\WeChat\Work\MsgAudit\Client                       $msg_audit
+ * @property \Surpaimb\WeChat\Work\Live\Client                           $live
+ * @property \Surpaimb\WeChat\Work\CorpGroup\Client                      $corp_group
+ * @property \Surpaimb\WeChat\Work\ExternalContact\SchoolClient          $school
+ * @property \Surpaimb\WeChat\Work\ExternalContact\MessageTemplateClient $external_contact_message_template
+ * @property \Surpaimb\WeChat\Work\Kf\AccountClient                      $kf_account
+ * @property \Surpaimb\WeChat\Work\Kf\ServicerClient                     $kf_servicer
+ * @property \Surpaimb\WeChat\Work\Kf\MessageClient                      $kf_message
+ * @property \Surpaimb\WeChat\Work\GroupWelcomeTemplate\Client           $group_welcome_templage
  *
  * @method mixed getCallbackIp()
  */
@@ -99,7 +99,7 @@ class Application extends ServiceContainer
     /**
      * Creates the miniProgram application.
      *
-     * @return \EasyWeChat\Work\MiniProgram\Application
+     * @return \Surpaimb\WeChat\Work\MiniProgram\Application
      */
     public function miniProgram(): MiniProgram
     {

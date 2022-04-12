@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\BasicService\Jssdk;
+namespace Surpaimb\WeChat\Tests\BasicService\Jssdk;
 
-use EasyWeChat\BasicService\Jssdk\Client;
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\BasicService\Jssdk\Client;
+use Surpaimb\WeChat\Kernel\Exceptions\RuntimeException;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {
@@ -71,7 +71,7 @@ class ClientTest extends TestCase
         ];
         $cacheKey = 'easywechat.basic_service.jssdk.ticket.jsapi.123456';
         $client->allows()->getCache()->andReturn($cache);
-        $response = new \EasyWeChat\Kernel\Http\Response(200, [], json_encode($ticket));
+        $response = new \Surpaimb\WeChat\Kernel\Http\Response(200, [], json_encode($ticket));
 
         // no refresh and cached
         $cache->expects()->has($cacheKey)->andReturn(true);

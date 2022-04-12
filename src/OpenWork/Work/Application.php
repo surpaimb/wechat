@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenWork\Work;
+namespace Surpaimb\WeChat\OpenWork\Work;
 
-use EasyWeChat\OpenWork\Application as OpenWork;
-use EasyWeChat\OpenWork\Work\Auth\AccessToken;
-use EasyWeChat\Work\Application as Work;
+use Surpaimb\WeChat\OpenWork\Application as OpenWork;
+use Surpaimb\WeChat\OpenWork\Work\Auth\AccessToken;
+use Surpaimb\WeChat\Work\Application as Work;
 
 /**
  * Application.

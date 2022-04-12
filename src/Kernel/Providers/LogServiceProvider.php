@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Providers;
+namespace Surpaimb\WeChat\Kernel\Providers;
 
-use EasyWeChat\Kernel\Log\LogManager;
+use Surpaimb\WeChat\Kernel\Log\LogManager;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 

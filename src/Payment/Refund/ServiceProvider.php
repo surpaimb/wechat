@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Refund;
+namespace Surpaimb\WeChat\Payment\Refund;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

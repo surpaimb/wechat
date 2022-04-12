@@ -1,10 +1,10 @@
 <?php
 
-namespace EasyWeChat\MiniProgram\UrlScheme;
+namespace Surpaimb\WeChat\MiniProgram\UrlScheme;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Exceptions\InvalidConfigException;
-use EasyWeChat\Kernel\Support\Collection;
+use Surpaimb\WeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException;
+use Surpaimb\WeChat\Kernel\Support\Collection;
 use GuzzleHttp\Exception\GuzzleException;
 use Psr\Http\Message\ResponseInterface;
 
@@ -12,7 +12,7 @@ use Psr\Http\Message\ResponseInterface;
  * Url Scheme
  *
  * Class Client
- * @package EasyWeChat\MiniProgram\UrlScheme
+ * @package Surpaimb\WeChat\MiniProgram\UrlScheme
  */
 class Client extends BaseClient
 {

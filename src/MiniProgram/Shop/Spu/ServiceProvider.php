@@ -1,6 +1,6 @@
 <?php
 
-namespace EasyWeChat\MiniProgram\Shop\Spu;
+namespace Surpaimb\WeChat\MiniProgram\Shop\Spu;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
@@ -9,7 +9,7 @@ use Pimple\ServiceProviderInterface;
  * 自定义版交易组件及开放接口 - SPU接口
  *
  * @author HaoLiang <haoliang@qiyuankeji.cn>
- * @package EasyWeChat\MiniProgram\Shop\Spu
+ * @package Surpaimb\WeChat\MiniProgram\Shop\Spu
  */
 class ServiceProvider implements ServiceProviderInterface
 {

@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenWork\Server;
+namespace Surpaimb\WeChat\OpenWork\Server;
 
-use EasyWeChat\Kernel\Encryptor;
-use EasyWeChat\Kernel\ServerGuard;
+use Surpaimb\WeChat\Kernel\Encryptor;
+use Surpaimb\WeChat\Kernel\ServerGuard;
 
 /**
  * Guard.
@@ -52,7 +52,7 @@ class Guard extends ServerGuard
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\RuntimeException
      */
     protected function decryptMessage(array $message)
     {

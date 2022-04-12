@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenPlatform;
+namespace Surpaimb\WeChat\Tests\OpenPlatform;
 
-use EasyWeChat\OpenPlatform\Server\Handlers\Unauthorized;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\OpenPlatform\Server\Handlers\Unauthorized;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class UnauthorizedTest extends TestCase
 {

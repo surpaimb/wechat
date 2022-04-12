@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\Auth;
+namespace Surpaimb\WeChat\MiniProgram\Auth;
 
-use EasyWeChat\Kernel\AccessToken as BaseAccessToken;
+use Surpaimb\WeChat\Kernel\AccessToken as BaseAccessToken;
 
 /**
  * Class AccessToken.

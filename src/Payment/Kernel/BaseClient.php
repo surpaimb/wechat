@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Kernel;
+namespace Surpaimb\WeChat\Payment\Kernel;
 
-use EasyWeChat\Kernel\Support;
-use EasyWeChat\Kernel\Traits\HasHttpRequests;
-use EasyWeChat\Payment\Application;
+use Surpaimb\WeChat\Kernel\Support;
+use Surpaimb\WeChat\Kernel\Traits\HasHttpRequests;
+use Surpaimb\WeChat\Payment\Application;
 use GuzzleHttp\MessageFormatter;
 use GuzzleHttp\Middleware;
 use Psr\Http\Message\ResponseInterface;
@@ -28,14 +28,14 @@ class BaseClient
     use HasHttpRequests { request as performRequest; }
 
     /**
-     * @var \EasyWeChat\Payment\Application
+     * @var \Surpaimb\WeChat\Payment\Application
      */
     protected $app;
 
     /**
      * Constructor.
      *
-     * @param \EasyWeChat\Payment\Application $app
+     * @param \Surpaimb\WeChat\Payment\Application $app
      */
     public function __construct(Application $app)
     {
@@ -63,10 +63,10 @@ class BaseClient
      * @param array  $options
      * @param bool   $returnResponse
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     protected function request(string $endpoint, array $params = [], $method = 'post', array $options = [], $returnResponse = false)
@@ -119,8 +119,8 @@ class BaseClient
      *
      * @return ResponseInterface
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     protected function requestRaw(string $endpoint, array $params = [], $method = 'post', array $options = [])
@@ -141,8 +141,8 @@ class BaseClient
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     protected function requestArray(string $endpoint, array $params = [], $method = 'post', array $options = []): array
@@ -160,10 +160,10 @@ class BaseClient
      * @param string $method
      * @param array  $options
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     protected function safeRequest($endpoint, array $params, $method = 'post', array $options = [])

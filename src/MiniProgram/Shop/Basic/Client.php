@@ -1,13 +1,13 @@
 <?php
 
-namespace EasyWeChat\MiniProgram\Shop\Basic;
+namespace Surpaimb\WeChat\MiniProgram\Shop\Basic;
 
-use EasyWeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\BaseClient;
 
 /**
  * 自定义版交易组件及开放接口 - 接入商品前必需接口
  *
- * @package EasyWeChat\MiniProgram\Shop\Basic
+ * @package Surpaimb\WeChat\MiniProgram\Shop\Basic
  * @author HaoLiang <haoliang@qiyuankeji.cn>
  */
 class Client extends BaseClient
@@ -15,8 +15,8 @@ class Client extends BaseClient
     /**
      * 获取商品类目
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getCat()
@@ -30,8 +30,8 @@ class Client extends BaseClient
      *
      * @param string $imageFilePath 图片文件路径
      * @param int $respType 返回类型
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function imgUpload(string $imageFilePath, int $respType = 1)
@@ -47,8 +47,8 @@ class Client extends BaseClient
      * 品牌审核
      *
      * @param array $brand 品牌信息
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function auditBrand(array $brand)
@@ -62,8 +62,8 @@ class Client extends BaseClient
      * 类目审核
      *
      * @param array $category 类目资质
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function auditCategory(array $category)
@@ -77,8 +77,8 @@ class Client extends BaseClient
      * 获取审核结果
      *
      * @param string $auditId 提交审核时返回的id
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function auditResult(string $auditId)
@@ -92,8 +92,8 @@ class Client extends BaseClient
      * 获取小程序资质
      *
      * @param int $reqType
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getMiniAppCertificate(int $reqType = 2)

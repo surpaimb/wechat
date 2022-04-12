@@ -5,7 +5,7 @@
  *
  */
 
-namespace EasyWeChat\MiniProgram\Business;
+namespace Surpaimb\WeChat\MiniProgram\Business;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work\User;
+namespace Surpaimb\WeChat\Tests\Work\User;
 
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\User\TagClient;
+use Surpaimb\WeChat\Tests\TestCase;
+use Surpaimb\WeChat\Work\User\TagClient;
 
 class TagClientTest extends TestCase
 {

@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\Schedule;
+namespace Surpaimb\WeChat\Work\Schedule;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

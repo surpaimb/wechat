@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenWork\Server;
+namespace Surpaimb\WeChat\OpenWork\Server;
 
-use EasyWeChat\Kernel\Encryptor;
-use EasyWeChat\OpenWork\Server\Handlers\EchoStrHandler;
+use Surpaimb\WeChat\Kernel\Encryptor;
+use Surpaimb\WeChat\OpenWork\Server\Handlers\EchoStrHandler;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 

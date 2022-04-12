@@ -9,54 +9,54 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram;
+namespace Surpaimb\WeChat\MiniProgram;
 
-use EasyWeChat\BasicService;
-use EasyWeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\BasicService;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
 
 /**
  * Class Application.
  *
  * @author mingyoung <mingyoungcheung@gmail.com>
  *
- * @property \EasyWeChat\MiniProgram\Auth\AccessToken           $access_token
- * @property \EasyWeChat\MiniProgram\DataCube\Client            $data_cube
- * @property \EasyWeChat\MiniProgram\AppCode\Client             $app_code
- * @property \EasyWeChat\MiniProgram\Auth\Client                $auth
- * @property \EasyWeChat\OfficialAccount\Server\Guard           $server
- * @property \EasyWeChat\MiniProgram\Encryptor                  $encryptor
- * @property \EasyWeChat\MiniProgram\TemplateMessage\Client     $template_message
- * @property \EasyWeChat\OfficialAccount\CustomerService\Client $customer_service
- * @property \EasyWeChat\MiniProgram\Plugin\Client              $plugin
- * @property \EasyWeChat\MiniProgram\Plugin\DevClient           $plugin_dev
- * @property \EasyWeChat\MiniProgram\UniformMessage\Client      $uniform_message
- * @property \EasyWeChat\MiniProgram\ActivityMessage\Client     $activity_message
- * @property \EasyWeChat\MiniProgram\Express\Client             $logistics
- * @property \EasyWeChat\MiniProgram\NearbyPoi\Client           $nearby_poi
- * @property \EasyWeChat\MiniProgram\OCR\Client                 $ocr
- * @property \EasyWeChat\MiniProgram\Soter\Client               $soter
- * @property \EasyWeChat\BasicService\Media\Client              $media
- * @property \EasyWeChat\BasicService\ContentSecurity\Client    $content_security
- * @property \EasyWeChat\MiniProgram\Mall\ForwardsMall          $mall
- * @property \EasyWeChat\MiniProgram\SubscribeMessage\Client    $subscribe_message
- * @property \EasyWeChat\MiniProgram\RealtimeLog\Client         $realtime_log
- * @property \EasyWeChat\MiniProgram\RiskControl\Client         $risk_control
- * @property \EasyWeChat\MiniProgram\Search\Client              $search
- * @property \EasyWeChat\MiniProgram\Live\Client                $live
- * @property \EasyWeChat\MiniProgram\Broadcast\Client           $broadcast
- * @property \EasyWeChat\MiniProgram\UrlScheme\Client           $url_scheme
- * @property \EasyWeChat\MiniProgram\Union\Client               $union
- * @property \EasyWeChat\MiniProgram\Shop\Register\Client       $shop_register
- * @property \EasyWeChat\MiniProgram\Shop\Basic\Client          $shop_basic
- * @property \EasyWeChat\MiniProgram\Shop\Account\Client        $shop_account
- * @property \EasyWeChat\MiniProgram\Shop\Spu\Client            $shop_spu
- * @property \EasyWeChat\MiniProgram\Shop\Order\Client          $shop_order
- * @property \EasyWeChat\MiniProgram\Shop\Delivery\Client       $shop_delivery
- * @property \EasyWeChat\MiniProgram\Shop\Aftersale\Client      $shop_aftersale
- * @property \EasyWeChat\MiniProgram\Business\Client            $business
- * @property \EasyWeChat\MiniProgram\UrlLink\Client             $url_link
- * @property \EasyWeChat\MiniProgram\QrCode\Client              $qr_code
- * @property \EasyWeChat\MiniProgram\PhoneNumber\Client         $phone_number
+ * @property \Surpaimb\WeChat\MiniProgram\Auth\AccessToken           $access_token
+ * @property \Surpaimb\WeChat\MiniProgram\DataCube\Client            $data_cube
+ * @property \Surpaimb\WeChat\MiniProgram\AppCode\Client             $app_code
+ * @property \Surpaimb\WeChat\MiniProgram\Auth\Client                $auth
+ * @property \Surpaimb\WeChat\OfficialAccount\Server\Guard           $server
+ * @property \Surpaimb\WeChat\MiniProgram\Encryptor                  $encryptor
+ * @property \Surpaimb\WeChat\MiniProgram\TemplateMessage\Client     $template_message
+ * @property \Surpaimb\WeChat\OfficialAccount\CustomerService\Client $customer_service
+ * @property \Surpaimb\WeChat\MiniProgram\Plugin\Client              $plugin
+ * @property \Surpaimb\WeChat\MiniProgram\Plugin\DevClient           $plugin_dev
+ * @property \Surpaimb\WeChat\MiniProgram\UniformMessage\Client      $uniform_message
+ * @property \Surpaimb\WeChat\MiniProgram\ActivityMessage\Client     $activity_message
+ * @property \Surpaimb\WeChat\MiniProgram\Express\Client             $logistics
+ * @property \Surpaimb\WeChat\MiniProgram\NearbyPoi\Client           $nearby_poi
+ * @property \Surpaimb\WeChat\MiniProgram\OCR\Client                 $ocr
+ * @property \Surpaimb\WeChat\MiniProgram\Soter\Client               $soter
+ * @property \Surpaimb\WeChat\BasicService\Media\Client              $media
+ * @property \Surpaimb\WeChat\BasicService\ContentSecurity\Client    $content_security
+ * @property \Surpaimb\WeChat\MiniProgram\Mall\ForwardsMall          $mall
+ * @property \Surpaimb\WeChat\MiniProgram\SubscribeMessage\Client    $subscribe_message
+ * @property \Surpaimb\WeChat\MiniProgram\RealtimeLog\Client         $realtime_log
+ * @property \Surpaimb\WeChat\MiniProgram\RiskControl\Client         $risk_control
+ * @property \Surpaimb\WeChat\MiniProgram\Search\Client              $search
+ * @property \Surpaimb\WeChat\MiniProgram\Live\Client                $live
+ * @property \Surpaimb\WeChat\MiniProgram\Broadcast\Client           $broadcast
+ * @property \Surpaimb\WeChat\MiniProgram\UrlScheme\Client           $url_scheme
+ * @property \Surpaimb\WeChat\MiniProgram\Union\Client               $union
+ * @property \Surpaimb\WeChat\MiniProgram\Shop\Register\Client       $shop_register
+ * @property \Surpaimb\WeChat\MiniProgram\Shop\Basic\Client          $shop_basic
+ * @property \Surpaimb\WeChat\MiniProgram\Shop\Account\Client        $shop_account
+ * @property \Surpaimb\WeChat\MiniProgram\Shop\Spu\Client            $shop_spu
+ * @property \Surpaimb\WeChat\MiniProgram\Shop\Order\Client          $shop_order
+ * @property \Surpaimb\WeChat\MiniProgram\Shop\Delivery\Client       $shop_delivery
+ * @property \Surpaimb\WeChat\MiniProgram\Shop\Aftersale\Client      $shop_aftersale
+ * @property \Surpaimb\WeChat\MiniProgram\Business\Client            $business
+ * @property \Surpaimb\WeChat\MiniProgram\UrlLink\Client             $url_link
+ * @property \Surpaimb\WeChat\MiniProgram\QrCode\Client              $qr_code
+ * @property \Surpaimb\WeChat\MiniProgram\PhoneNumber\Client         $phone_number
  */
 class Application extends ServiceContainer
 {

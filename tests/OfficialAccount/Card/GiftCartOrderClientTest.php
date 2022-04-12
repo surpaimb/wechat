@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OfficialAccount\Card;
+namespace Surpaimb\WeChat\Tests\OfficialAccount\Card;
 
-use EasyWeChat\OfficialAccount\Card\GiftCardOrderClient;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\OfficialAccount\Card\GiftCardOrderClient;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class GiftCartOrderClientTest extends TestCase
 {

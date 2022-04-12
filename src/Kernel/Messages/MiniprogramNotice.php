@@ -1,6 +1,6 @@
 <?php
 
-namespace EasyWeChat\Kernel\Messages;
+namespace Surpaimb\WeChat\Kernel\Messages;
 
 class MiniprogramNotice extends Message
 {

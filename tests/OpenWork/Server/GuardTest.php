@@ -9,14 +9,14 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenWork\Server;
+namespace Surpaimb\WeChat\Tests\OpenWork\Server;
 
-use EasyWeChat\Kernel\Config;
-use EasyWeChat\Kernel\Encryptor;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OpenWork\Application;
-use EasyWeChat\OpenWork\Server\Guard;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\Config;
+use Surpaimb\WeChat\Kernel\Encryptor;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\OpenWork\Application;
+use Surpaimb\WeChat\OpenWork\Server\Guard;
+use Surpaimb\WeChat\Tests\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 
 class GuardTest extends TestCase

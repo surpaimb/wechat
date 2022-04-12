@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\MicroMerchant\MerchantConfig;
+namespace Surpaimb\WeChat\Tests\MicroMerchant\MerchantConfig;
 
-use EasyWeChat\MicroMerchant\Application;
-use EasyWeChat\MicroMerchant\MerchantConfig\Client;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\MicroMerchant\Application;
+use Surpaimb\WeChat\MicroMerchant\MerchantConfig\Client;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

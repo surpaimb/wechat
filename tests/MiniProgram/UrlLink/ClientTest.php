@@ -1,9 +1,9 @@
 <?php
 
-namespace EasyWeChat\Tests\MiniProgram\UrlLink;
+namespace Surpaimb\WeChat\Tests\MiniProgram\UrlLink;
 
-use EasyWeChat\MiniProgram\UrlLink\Client;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\MiniProgram\UrlLink\Client;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

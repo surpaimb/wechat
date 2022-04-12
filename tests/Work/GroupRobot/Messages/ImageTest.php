@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work\GroupRobot\Messages;
+namespace Surpaimb\WeChat\Tests\Work\GroupRobot\Messages;
 
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\GroupRobot\Messages\Image;
-use EasyWeChat\Work\GroupRobot\Messages\Message;
+use Surpaimb\WeChat\Tests\TestCase;
+use Surpaimb\WeChat\Work\GroupRobot\Messages\Image;
+use Surpaimb\WeChat\Work\GroupRobot\Messages\Message;
 
 class ImageTest extends TestCase
 {

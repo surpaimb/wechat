@@ -9,13 +9,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Traits;
+namespace Surpaimb\WeChat\Kernel\Traits;
 
-use EasyWeChat\Kernel\Contracts\Arrayable;
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\Exceptions\InvalidConfigException;
-use EasyWeChat\Kernel\Http\Response;
-use EasyWeChat\Kernel\Support\Collection;
+use Surpaimb\WeChat\Kernel\Contracts\Arrayable;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException;
+use Surpaimb\WeChat\Kernel\Http\Response;
+use Surpaimb\WeChat\Kernel\Support\Collection;
 use Psr\Http\Message\ResponseInterface;
 
 /**
@@ -29,9 +29,9 @@ trait ResponseCastable
      * @param \Psr\Http\Message\ResponseInterface $response
      * @param string|null                         $type
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     protected function castResponseToType(ResponseInterface $response, $type = null)
     {
@@ -60,10 +60,10 @@ trait ResponseCastable
      * @param mixed       $response
      * @param string|null $type
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     protected function detectAndCastResponseToType($response, $type = null)
     {

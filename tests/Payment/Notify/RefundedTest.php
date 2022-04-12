@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Payment\Notify;
+namespace Surpaimb\WeChat\Tests\Payment\Notify;
 
-use EasyWeChat\Kernel\Support\XML;
-use EasyWeChat\Payment\Application;
-use EasyWeChat\Payment\Notify\Refunded;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\Support\XML;
+use Surpaimb\WeChat\Payment\Application;
+use Surpaimb\WeChat\Payment\Notify\Refunded;
+use Surpaimb\WeChat\Tests\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -113,7 +113,7 @@ class RefundedTest extends TestCase
         $app = $this->makeApp();
         $app['request'] = Request::create('', 'POST', [], [], [], [], 'invalid-xml');
         $notify = new Refunded($app);
-        $this->expectException('\EasyWeChat\Kernel\Exceptions\Exception');
+        $this->expectException('\Surpaimb\WeChat\Kernel\Exceptions\Exception');
         $notify->getMessage();
     }
 
@@ -122,7 +122,7 @@ class RefundedTest extends TestCase
         $app = $this->makeApp();
         $app['request'] = Request::create('', 'POST', [], [], [], [], '<xml></xml>');
         $notify = new Refunded($app);
-        $this->expectException('\EasyWeChat\Kernel\Exceptions\Exception');
+        $this->expectException('\Surpaimb\WeChat\Kernel\Exceptions\Exception');
         $notify->getMessage();
     }
 }

@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Authorizer\OfficialAccount\Account;
+namespace Surpaimb\WeChat\OpenPlatform\Authorizer\OfficialAccount\Account;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OpenPlatform\Application;
-use EasyWeChat\OpenPlatform\Authorizer\Aggregate\Account\Client as BaseClient;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\OpenPlatform\Application;
+use Surpaimb\WeChat\OpenPlatform\Authorizer\Aggregate\Account\Client as BaseClient;
 
 /**
  * Class Client.
@@ -23,15 +23,15 @@ use EasyWeChat\OpenPlatform\Authorizer\Aggregate\Account\Client as BaseClient;
 class Client extends BaseClient
 {
     /**
-     * @var \EasyWeChat\OpenPlatform\Application
+     * @var \Surpaimb\WeChat\OpenPlatform\Application
      */
     protected $component;
 
     /**
      * Client constructor.
      *
-     * @param \EasyWeChat\Kernel\ServiceContainer  $app
-     * @param \EasyWeChat\OpenPlatform\Application $component
+     * @param \Surpaimb\WeChat\Kernel\ServiceContainer  $app
+     * @param \Surpaimb\WeChat\OpenPlatform\Application $component
      */
     public function __construct(ServiceContainer $app, Application $component)
     {
@@ -65,9 +65,9 @@ class Client extends BaseClient
      *
      * @param string $ticket
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function register(string $ticket)

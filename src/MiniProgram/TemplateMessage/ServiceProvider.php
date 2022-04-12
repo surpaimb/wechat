@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\TemplateMessage;
+namespace Surpaimb\WeChat\MiniProgram\TemplateMessage;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

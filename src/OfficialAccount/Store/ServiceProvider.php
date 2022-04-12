@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Store;
+namespace Surpaimb\WeChat\OfficialAccount\Store;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

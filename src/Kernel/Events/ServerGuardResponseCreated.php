@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Events;
+namespace Surpaimb\WeChat\Kernel\Events;
 
 use Symfony\Component\HttpFoundation\Response;
 

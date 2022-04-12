@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Notify;
+namespace Surpaimb\WeChat\Payment\Notify;
 
 use Closure;
-use EasyWeChat\Kernel\Support\XML;
+use Surpaimb\WeChat\Kernel\Support\XML;
 
 class Refunded extends Handler
 {
@@ -23,7 +23,7 @@ class Refunded extends Handler
      *
      * @return \Symfony\Component\HttpFoundation\Response
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\Exception
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\Exception
      */
     public function handle(Closure $closure)
     {
@@ -39,7 +39,7 @@ class Refunded extends Handler
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\Exception
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\Exception
      */
     public function reqInfo()
     {

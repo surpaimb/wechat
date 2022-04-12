@@ -9,21 +9,21 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\ShakeAround;
+namespace Surpaimb\WeChat\OfficialAccount\ShakeAround;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
 
 /**
  * Class Card.
  *
  * @author overtrue <i@overtrue.me>
  *
- * @property \EasyWeChat\OfficialAccount\ShakeAround\DeviceClient   $device
- * @property \EasyWeChat\OfficialAccount\ShakeAround\GroupClient    $group
- * @property \EasyWeChat\OfficialAccount\ShakeAround\MaterialClient $material
- * @property \EasyWeChat\OfficialAccount\ShakeAround\RelationClient $relation
- * @property \EasyWeChat\OfficialAccount\ShakeAround\StatsClient    $stats
- * @property \EasyWeChat\OfficialAccount\ShakeAround\PageClient     $page
+ * @property \Surpaimb\WeChat\OfficialAccount\ShakeAround\DeviceClient   $device
+ * @property \Surpaimb\WeChat\OfficialAccount\ShakeAround\GroupClient    $group
+ * @property \Surpaimb\WeChat\OfficialAccount\ShakeAround\MaterialClient $material
+ * @property \Surpaimb\WeChat\OfficialAccount\ShakeAround\RelationClient $relation
+ * @property \Surpaimb\WeChat\OfficialAccount\ShakeAround\StatsClient    $stats
+ * @property \Surpaimb\WeChat\OfficialAccount\ShakeAround\PageClient     $page
  */
 class ShakeAround extends Client
 {
@@ -32,7 +32,7 @@ class ShakeAround extends Client
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      */
     public function __get($property)
     {

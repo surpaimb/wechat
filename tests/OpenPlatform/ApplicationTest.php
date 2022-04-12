@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenPlatform;
+namespace Surpaimb\WeChat\Tests\OpenPlatform;
 
-use EasyWeChat\OpenPlatform\Application;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\OpenPlatform\Application;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class ApplicationTest extends TestCase
 {
@@ -20,11 +20,11 @@ class ApplicationTest extends TestCase
     {
         $app = new Application(['app_id' => 'app-id']);
 
-        $this->assertInstanceOf(\EasyWeChat\OpenPlatform\Auth\AccessToken::class, $app->access_token);
-        $this->assertInstanceOf(\EasyWeChat\OpenPlatform\Auth\VerifyTicket::class, $app->verify_ticket);
-        $this->assertInstanceOf(\EasyWeChat\OpenPlatform\Server\Guard::class, $app->server);
-        $this->assertInstanceOf(\EasyWeChat\OpenPlatform\CodeTemplate\Client::class, $app->code_template);
-        $this->assertInstanceOf(\EasyWeChat\OpenPlatform\Component\Client::class, $app->component);
+        $this->assertInstanceOf(\Surpaimb\WeChat\OpenPlatform\Auth\AccessToken::class, $app->access_token);
+        $this->assertInstanceOf(\Surpaimb\WeChat\OpenPlatform\Auth\VerifyTicket::class, $app->verify_ticket);
+        $this->assertInstanceOf(\Surpaimb\WeChat\OpenPlatform\Server\Guard::class, $app->server);
+        $this->assertInstanceOf(\Surpaimb\WeChat\OpenPlatform\CodeTemplate\Client::class, $app->code_template);
+        $this->assertInstanceOf(\Surpaimb\WeChat\OpenPlatform\Component\Client::class, $app->component);
     }
 
     public function testGetPreAuthorizationUrl()

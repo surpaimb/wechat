@@ -9,32 +9,32 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment;
+namespace Surpaimb\WeChat\Payment;
 
 use Closure;
-use EasyWeChat\BasicService;
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Kernel\Support;
-use EasyWeChat\OfficialAccount;
+use Surpaimb\WeChat\BasicService;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\Kernel\Support;
+use Surpaimb\WeChat\OfficialAccount;
 
 /**
  * Class Application.
  *
- * @property \EasyWeChat\Payment\Bill\Client              $bill
- * @property \EasyWeChat\Payment\Fundflow\Client          $fundflow
- * @property \EasyWeChat\Payment\Jssdk\Client             $jssdk
- * @property \EasyWeChat\Payment\Order\Client             $order
- * @property \EasyWeChat\Payment\Refund\Client            $refund
- * @property \EasyWeChat\Payment\Coupon\Client            $coupon
- * @property \EasyWeChat\Payment\Reverse\Client           $reverse
- * @property \EasyWeChat\Payment\Redpack\Client           $redpack
- * @property \EasyWeChat\BasicService\Url\Client          $url
- * @property \EasyWeChat\Payment\Transfer\Client          $transfer
- * @property \EasyWeChat\Payment\Security\Client          $security
- * @property \EasyWeChat\Payment\ProfitSharing\Client     $profit_sharing
- * @property \EasyWeChat\Payment\Contract\Client          $contract
- * @property \EasyWeChat\OfficialAccount\Auth\AccessToken $access_token
+ * @property \Surpaimb\WeChat\Payment\Bill\Client              $bill
+ * @property \Surpaimb\WeChat\Payment\Fundflow\Client          $fundflow
+ * @property \Surpaimb\WeChat\Payment\Jssdk\Client             $jssdk
+ * @property \Surpaimb\WeChat\Payment\Order\Client             $order
+ * @property \Surpaimb\WeChat\Payment\Refund\Client            $refund
+ * @property \Surpaimb\WeChat\Payment\Coupon\Client            $coupon
+ * @property \Surpaimb\WeChat\Payment\Reverse\Client           $reverse
+ * @property \Surpaimb\WeChat\Payment\Redpack\Client           $redpack
+ * @property \Surpaimb\WeChat\BasicService\Url\Client          $url
+ * @property \Surpaimb\WeChat\Payment\Transfer\Client          $transfer
+ * @property \Surpaimb\WeChat\Payment\Security\Client          $security
+ * @property \Surpaimb\WeChat\Payment\ProfitSharing\Client     $profit_sharing
+ * @property \Surpaimb\WeChat\Payment\Contract\Client          $contract
+ * @property \Surpaimb\WeChat\OfficialAccount\Auth\AccessToken $access_token
  *
  * @method mixed pay(array $attributes)
  * @method mixed authCodeToOpenid(string $authCode)
@@ -112,7 +112,7 @@ class Application extends ServiceContainer
      *
      * @codeCoverageIgnore
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\Exception
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\Exception
      */
     public function handlePaidNotify(Closure $closure)
     {
@@ -126,7 +126,7 @@ class Application extends ServiceContainer
      *
      * @codeCoverageIgnore
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\Exception
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\Exception
      */
     public function handleRefundedNotify(Closure $closure)
     {
@@ -140,7 +140,7 @@ class Application extends ServiceContainer
      *
      * @codeCoverageIgnore
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\Exception
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\Exception
      */
     public function handleScannedNotify(Closure $closure)
     {
@@ -176,7 +176,7 @@ class Application extends ServiceContainer
      *
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      */
     public function getKey(string $endpoint = null)
     {

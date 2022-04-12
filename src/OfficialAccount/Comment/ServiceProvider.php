@@ -20,7 +20,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Comment;
+namespace Surpaimb\WeChat\OfficialAccount\Comment;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Clauses;
+namespace Surpaimb\WeChat\Kernel\Clauses;
 
 /**
  * Class Clause.

@@ -1,6 +1,6 @@
 <?php
 
-namespace EasyWeChat\MiniProgram\RiskControl;
+namespace Surpaimb\WeChat\MiniProgram\RiskControl;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
@@ -9,7 +9,7 @@ use Pimple\ServiceProviderInterface;
  * 安全风控
  *
  * Class ServiceProvider
- * @package EasyWeChat\MiniProgram\RiskControl
+ * @package Surpaimb\WeChat\MiniProgram\RiskControl
  */
 class ServiceProvider implements ServiceProviderInterface
 {

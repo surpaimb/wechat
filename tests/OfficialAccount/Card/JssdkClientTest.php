@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OfficialAccount\Card;
+namespace Surpaimb\WeChat\Tests\OfficialAccount\Card;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OfficialAccount\Card\JssdkClient;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\OfficialAccount\Card\JssdkClient;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class JssdkClientTest extends TestCase
 {
@@ -31,7 +31,7 @@ class JssdkClientTest extends TestCase
         $cacheKey = 'easywechat.basic_service.jssdk.ticket.wx_card.123456';
         $client->allows()->getCache()->andReturn($cache);
 
-        $response = new \EasyWeChat\Kernel\Http\Response(200, [], json_encode($ticket));
+        $response = new \Surpaimb\WeChat\Kernel\Http\Response(200, [], json_encode($ticket));
         $cache->expects()->has($cacheKey)->twice()->andReturns(false, true);
         $cache->expects()->get($cacheKey)->never();
         $cache->expects()->set($cacheKey, $ticket, $ticket['expires_in'] - 500);

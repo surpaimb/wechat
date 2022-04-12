@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests;
+namespace Surpaimb\WeChat\Tests;
 
-use EasyWeChat\Kernel\AccessToken;
-use EasyWeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\Kernel\AccessToken;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
 use PHPUnit\Framework\TestCase as BaseTestCase;
 use DMS\PHPUnitExtensions\ArraySubset\ArraySubsetAsserts;
 
@@ -28,7 +28,7 @@ class TestCase extends BaseTestCase
      *
      * @param string                                   $name
      * @param array|string                             $methods
-     * @param \EasyWeChat\Kernel\ServiceContainer|null $app
+     * @param \Surpaimb\WeChat\Kernel\ServiceContainer|null $app
      *
      * @return \Mockery\Mock
      */

@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MicroMerchant\Kernel\Exceptions;
+namespace Surpaimb\WeChat\MicroMerchant\Kernel\Exceptions;
 
-use EasyWeChat\Kernel\Exceptions\Exception;
+use Surpaimb\WeChat\Kernel\Exceptions\Exception;
 
 /**
  * Class InvalidSignException.

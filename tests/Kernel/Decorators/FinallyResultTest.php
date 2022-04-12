@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Decorators;
+namespace Surpaimb\WeChat\Tests\Kernel\Decorators;
 
-use EasyWeChat\Kernel\Decorators\FinallyResult;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\Decorators\FinallyResult;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class FinallyResultTest extends TestCase
 {

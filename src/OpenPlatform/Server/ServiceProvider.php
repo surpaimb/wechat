@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Server;
+namespace Surpaimb\WeChat\OpenPlatform\Server;
 
-use EasyWeChat\Kernel\Encryptor;
+use Surpaimb\WeChat\Kernel\Encryptor;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 

@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\Search;
+namespace Surpaimb\WeChat\MiniProgram\Search;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

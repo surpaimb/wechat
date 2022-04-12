@@ -43,7 +43,7 @@
   },
   "autoload": {
     "psr-4": {
-      "EasyWeChat\\": "src/"
+      "Surpaimb\\WeChat\\": "src/"
     },
     "files": [
       "src/Kernel/Support/Helpers.php",
@@ -52,7 +52,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "EasyWeChat\\Tests\\": "tests/"
+      "Surpaimb\\WeChat\\Tests\\": "tests/"
     }
   },
   "extra": {

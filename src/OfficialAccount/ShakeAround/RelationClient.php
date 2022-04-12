@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\ShakeAround;
+namespace Surpaimb\WeChat\OfficialAccount\ShakeAround;
 
-use EasyWeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\BaseClient;
 
 /**
  * Class RelationClient.
@@ -26,9 +26,9 @@ class RelationClient extends BaseClient
      * @param array $deviceIdentifier
      * @param array $pageIds
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function bindPages(array $deviceIdentifier, array $pageIds)
@@ -46,9 +46,9 @@ class RelationClient extends BaseClient
      *
      * @param array $deviceIdentifier
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function listByDeviceId(array $deviceIdentifier)
@@ -68,9 +68,9 @@ class RelationClient extends BaseClient
      * @param int $begin
      * @param int $count
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function listByPageId(int $pageId, int $begin, int $count)

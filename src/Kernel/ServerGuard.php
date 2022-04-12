@@ -9,19 +9,19 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel;
+namespace Surpaimb\WeChat\Kernel;
 
-use EasyWeChat\Kernel\Contracts\MessageInterface;
-use EasyWeChat\Kernel\Exceptions\BadRequestException;
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\Messages\Message;
-use EasyWeChat\Kernel\Messages\News;
-use EasyWeChat\Kernel\Messages\NewsItem;
-use EasyWeChat\Kernel\Messages\Raw as RawMessage;
-use EasyWeChat\Kernel\Messages\Text;
-use EasyWeChat\Kernel\Support\XML;
-use EasyWeChat\Kernel\Traits\Observable;
-use EasyWeChat\Kernel\Traits\ResponseCastable;
+use Surpaimb\WeChat\Kernel\Contracts\MessageInterface;
+use Surpaimb\WeChat\Kernel\Exceptions\BadRequestException;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
+use Surpaimb\WeChat\Kernel\Messages\Message;
+use Surpaimb\WeChat\Kernel\Messages\News;
+use Surpaimb\WeChat\Kernel\Messages\NewsItem;
+use Surpaimb\WeChat\Kernel\Messages\Raw as RawMessage;
+use Surpaimb\WeChat\Kernel\Messages\Text;
+use Surpaimb\WeChat\Kernel\Support\XML;
+use Surpaimb\WeChat\Kernel\Traits\Observable;
+use Surpaimb\WeChat\Kernel\Traits\ResponseCastable;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
@@ -66,7 +66,7 @@ class ServerGuard
     ];
 
     /**
-     * @var \EasyWeChat\Kernel\ServiceContainer
+     * @var \Surpaimb\WeChat\Kernel\ServiceContainer
      */
     protected $app;
 
@@ -75,7 +75,7 @@ class ServerGuard
      *
      * @codeCoverageIgnore
      *
-     * @param \EasyWeChat\Kernel\ServiceContainer $app
+     * @param \Surpaimb\WeChat\Kernel\ServiceContainer $app
      */
     public function __construct(ServiceContainer $app)
     {
@@ -92,8 +92,8 @@ class ServerGuard
      * @return Response
      *
      * @throws BadRequestException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function serve(): Response
     {
@@ -114,7 +114,7 @@ class ServerGuard
     /**
      * @return $this
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\BadRequestException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\BadRequestException
      */
     public function validate()
     {
@@ -148,11 +148,11 @@ class ServerGuard
     /**
      * Get request message.
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|string
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|string
      *
      * @throws BadRequestException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function getMessage()
     {
@@ -183,9 +183,9 @@ class ServerGuard
      *
      * @return \Symfony\Component\HttpFoundation\Response
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\BadRequestException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\BadRequestException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     protected function resolve(): Response
     {
@@ -217,11 +217,11 @@ class ServerGuard
     /**
      * @param string                                                   $to
      * @param string                                                   $from
-     * @param \EasyWeChat\Kernel\Contracts\MessageInterface|string|int $message
+     * @param \Surpaimb\WeChat\Kernel\Contracts\MessageInterface|string|int $message
      *
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
      */
     public function buildResponse(string $to, string $from, $message)
     {
@@ -253,9 +253,9 @@ class ServerGuard
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\BadRequestException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\BadRequestException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     protected function handleRequest(): array
     {
@@ -277,7 +277,7 @@ class ServerGuard
      *
      * @param string                                        $to
      * @param string                                        $from
-     * @param \EasyWeChat\Kernel\Contracts\MessageInterface $message
+     * @param \Surpaimb\WeChat\Kernel\Contracts\MessageInterface $message
      *
      * @return string
      */
@@ -319,7 +319,7 @@ class ServerGuard
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\BadRequestException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\BadRequestException
      */
     protected function parseMessage($content)
     {

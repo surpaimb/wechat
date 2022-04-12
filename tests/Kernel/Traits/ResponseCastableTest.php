@@ -9,16 +9,16 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Traits;
+namespace Surpaimb\WeChat\Tests\Kernel\Traits;
 
-use EasyWeChat\Kernel\Contracts\Arrayable;
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\Exceptions\InvalidConfigException;
-use EasyWeChat\Kernel\Http\Response;
-use EasyWeChat\Kernel\Support\ArrayAccessible;
-use EasyWeChat\Kernel\Support\Collection;
-use EasyWeChat\Kernel\Traits\ResponseCastable;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\Contracts\Arrayable;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
+use Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException;
+use Surpaimb\WeChat\Kernel\Http\Response;
+use Surpaimb\WeChat\Kernel\Support\ArrayAccessible;
+use Surpaimb\WeChat\Kernel\Support\Collection;
+use Surpaimb\WeChat\Kernel\Traits\ResponseCastable;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class ResponseCastableTest extends TestCase
 {

@@ -9,14 +9,14 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OfficialAccount\CustomerService;
+namespace Surpaimb\WeChat\Tests\OfficialAccount\CustomerService;
 
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\Messages\Raw;
-use EasyWeChat\Kernel\Messages\Text;
-use EasyWeChat\OfficialAccount\CustomerService\Client;
-use EasyWeChat\OfficialAccount\CustomerService\Messenger;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\Kernel\Exceptions\RuntimeException;
+use Surpaimb\WeChat\Kernel\Messages\Raw;
+use Surpaimb\WeChat\Kernel\Messages\Text;
+use Surpaimb\WeChat\OfficialAccount\CustomerService\Client;
+use Surpaimb\WeChat\OfficialAccount\CustomerService\Messenger;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class MessengerTest extends TestCase
 {

@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel;
+namespace Surpaimb\WeChat\Kernel;
 
-use EasyWeChat\Kernel\Support\Collection;
+use Surpaimb\WeChat\Kernel\Support\Collection;
 
 /**
  * Class Config.

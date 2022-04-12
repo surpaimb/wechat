@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Jssdk;
+namespace Surpaimb\WeChat\Payment\Jssdk;
 
-use EasyWeChat\BasicService\Jssdk\Client as JssdkClient;
-use EasyWeChat\Kernel\Support;
+use Surpaimb\WeChat\BasicService\Jssdk\Client as JssdkClient;
+use Surpaimb\WeChat\Kernel\Support;
 
 /**
  * Class Client.

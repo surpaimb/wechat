@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Auth;
+namespace Surpaimb\WeChat\OpenPlatform\Auth;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

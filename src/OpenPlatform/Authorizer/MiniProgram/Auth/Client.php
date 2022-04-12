@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Auth;
+namespace Surpaimb\WeChat\OpenPlatform\Authorizer\MiniProgram\Auth;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OpenPlatform\Application;
+use Surpaimb\WeChat\Kernel\BaseClient;
+use Surpaimb\WeChat\Kernel\ServiceContainer;
+use Surpaimb\WeChat\OpenPlatform\Application;
 
 /**
  * Class Client.
@@ -23,15 +23,15 @@ use EasyWeChat\OpenPlatform\Application;
 class Client extends BaseClient
 {
     /**
-     * @var \EasyWeChat\OpenPlatform\Application
+     * @var \Surpaimb\WeChat\OpenPlatform\Application
      */
     protected $component;
 
     /**
      * Client constructor.
      *
-     * @param \EasyWeChat\Kernel\ServiceContainer  $app
-     * @param \EasyWeChat\OpenPlatform\Application $component
+     * @param \Surpaimb\WeChat\Kernel\ServiceContainer  $app
+     * @param \Surpaimb\WeChat\OpenPlatform\Application $component
      */
     public function __construct(ServiceContainer $app, Application $component)
     {
@@ -45,9 +45,9 @@ class Client extends BaseClient
      *
      * @param string $code
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function session(string $code)
     {

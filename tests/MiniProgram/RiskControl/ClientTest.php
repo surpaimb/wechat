@@ -1,9 +1,9 @@
 <?php
 
-namespace EasyWeChat\Tests\MiniProgram\RiskControl;
+namespace Surpaimb\WeChat\Tests\MiniProgram\RiskControl;
 
-use EasyWeChat\MiniProgram\RiskControl\Client;
-use EasyWeChat\Tests\TestCase;
+use Surpaimb\WeChat\MiniProgram\RiskControl\Client;
+use Surpaimb\WeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {
