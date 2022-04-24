@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat;
+namespace Surpaimb\WeChat;
 
 /**
  * Class Factory.

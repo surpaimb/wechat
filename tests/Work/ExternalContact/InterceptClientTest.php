@@ -23,7 +23,6 @@ use Surpaimb\WeChat\Work\ExternalContact\InterceptClient;
  */
 class InterceptClientTest extends TestCase
 {
-
     /**
      * testCreateInterceptRule.
      *

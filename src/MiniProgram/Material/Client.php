@@ -13,8 +13,6 @@ namespace Surpaimb\WeChat\MiniProgram\Material;
 
 use Surpaimb\WeChat\Kernel\BaseClient;
 use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
-use Surpaimb\WeChat\Kernel\Http\StreamResponse;
-use Surpaimb\WeChat\Kernel\Messages\Article;
 
 /**
  * Class Client.
