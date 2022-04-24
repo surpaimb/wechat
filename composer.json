@@ -1,8 +1,8 @@
 {
-  "name": "overtrue/wechat",
+  "name": "surpaimb/wechat",
   "description": "微信SDK",
   "keywords": [
-    "easywechat",
+    "surpaimb/wechat",
     "wechat",
     "weixin",
     "weixin-sdk",
@@ -11,8 +11,8 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "overtrue",
-      "email": "anzhengchao@gmail.com"
+      "name": "surpaimb",
+      "email": "surpaimb@126.com"
     }
   ],
   "require": {
