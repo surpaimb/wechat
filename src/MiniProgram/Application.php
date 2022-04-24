@@ -58,6 +58,7 @@ use Surpaimb\WeChat\Kernel\ServiceContainer;
  * @property \Surpaimb\WeChat\MiniProgram\QrCode\Client              $qr_code
  * @property \Surpaimb\WeChat\MiniProgram\PhoneNumber\Client         $phone_number
  * @property \Surpaimb\WeChat\MiniProgram\ShortLink\Client           $short_link
+ * @property \Surpaimb\WeChat\MiniProgram\Material\Client           $material
  */
 class Application extends ServiceContainer
 {
@@ -105,6 +106,8 @@ class Application extends ServiceContainer
         Shop\Delivery\ServiceProvider::class,
         Shop\Aftersale\ServiceProvider::class,
         Business\ServiceProvider::class,
+        // 素材上传
+        Material\ServiceProvider::class,
     ];
 
     /**
