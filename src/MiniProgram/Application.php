@@ -31,7 +31,7 @@ use Surpaimb\WeChat\Kernel\ServiceContainer;
  * @property \Surpaimb\WeChat\MiniProgram\Plugin\DevClient           $plugin_dev
  * @property \Surpaimb\WeChat\MiniProgram\UniformMessage\Client      $uniform_message
  * @property \Surpaimb\WeChat\MiniProgram\ActivityMessage\Client     $activity_message
- * @property \Surpaimb\WeChat\MiniProgram\Express\Client             $logistics
+ * @property \Surpaimb\WeChat\MiniProgram\Express\Client             $express
  * @property \Surpaimb\WeChat\MiniProgram\NearbyPoi\Client           $nearby_poi
  * @property \Surpaimb\WeChat\MiniProgram\OCR\Client                 $ocr
  * @property \Surpaimb\WeChat\MiniProgram\Soter\Client               $soter
@@ -57,6 +57,7 @@ use Surpaimb\WeChat\Kernel\ServiceContainer;
  * @property \Surpaimb\WeChat\MiniProgram\UrlLink\Client             $url_link
  * @property \Surpaimb\WeChat\MiniProgram\QrCode\Client              $qr_code
  * @property \Surpaimb\WeChat\MiniProgram\PhoneNumber\Client         $phone_number
+ * @property \Surpaimb\WeChat\MiniProgram\ShortLink\Client           $short_link
  */
 class Application extends ServiceContainer
 {
@@ -91,6 +92,7 @@ class Application extends ServiceContainer
         UrlLink\ServiceProvider::class,
         Union\ServiceProvider::class,
         PhoneNumber\ServiceProvider::class,
+        ShortLink\ServiceProvider::class,
         // Base services
         BasicService\Media\ServiceProvider::class,
         BasicService\ContentSecurity\ServiceProvider::class,

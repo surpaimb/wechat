@@ -12,7 +12,6 @@
 namespace Surpaimb\WeChat\Work\Message;
 
 use Surpaimb\WeChat\Kernel\BaseClient;
-use Surpaimb\WeChat\Kernel\Messages\Message;
 
 /**
  * Class Client.

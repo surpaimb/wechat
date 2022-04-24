@@ -36,8 +36,11 @@ use Surpaimb\WeChat\Work\MiniProgram\Application as MiniProgram;
  * @property \Surpaimb\WeChat\Work\Chat\Client                           $chat
  * @property \Surpaimb\WeChat\Work\ExternalContact\Client                $external_contact
  * @property \Surpaimb\WeChat\Work\ExternalContact\ContactWayClient      $contact_way
+ * @property \Surpaimb\WeChat\Work\ExternalContact\GroupChatWayClient    $group_chat_way
  * @property \Surpaimb\WeChat\Work\ExternalContact\StatisticsClient      $external_contact_statistics
  * @property \Surpaimb\WeChat\Work\ExternalContact\MessageClient         $external_contact_message
+ * @property \Surpaimb\WeChat\Work\ExternalContact\InterceptClient       $intercept
+ * @property \Surpaimb\WeChat\Work\ExternalContact\ProductClient         $product
  * @property \Surpaimb\WeChat\Work\GroupRobot\Client                     $group_robot
  * @property \Surpaimb\WeChat\Work\GroupRobot\Messenger                  $group_robot_messenger
  * @property \Surpaimb\WeChat\Work\Calendar\Client                       $calendar

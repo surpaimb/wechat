@@ -22,6 +22,25 @@ use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
 class Client extends BaseClient
 {
     /**
+     * Get api quota.
+     *
+     * @param  string  $cgiPath  api cgi_path
+     *
+     * @return \Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string
+     *
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
+    public function getQuota(string $cgiPath)
+    {
+        $params = [
+            'cgi_path' => $cgiPath,
+        ];
+
+        return $this->httpPostJson('cgi-bin/openapi/quota/get', $params);
+    }
+
+    /**
      * Clear quota.
      *
      * @return \Psr\Http\Message\ResponseInterface|\Surpaimb\WeChat\Kernel\Support\Collection|array|object|string

@@ -564,8 +564,6 @@ class Client extends BaseClient
     /**
      * unionid查询external_userid
      *
-     * @see https://open.work.weixin.qq.com/api/doc/90001/90143/95327
-     *
      * @param string $unionid
      * @param string $openid
      * @param string $corpid
@@ -573,6 +571,10 @@ class Client extends BaseClient
      * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
+     *
+     * @deprecated  使用新方法`\Surpaimb\WeChat\OpenWork\Corp\unionidToExternalUserid`
+     *
+     * @see https://open.work.weixin.qq.com/api/doc/90001/90143/95327
      *
      * @author 读心印 <aa24615@qq.com>
      */
@@ -601,5 +603,27 @@ class Client extends BaseClient
     public function opengidToChatid(string $opengid)
     {
         return $this->httpPostJson('cgi-bin/externalcontact/opengid_to_chatid', compact('opengid'));
+    }
+
+
+    /**
+     * 上传附件资源
+     *
+     * @see https://work.weixin.qq.com/api/doc/90000/90135/95098
+     * @param string $path 附件资源路径
+     * @param string $mediaType 媒体文件类型
+     * @param string $attachmentType 附件类型
+     * @return array|\Surpaimb\WeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Surpaimb\WeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
+    public function uploadAttachment(string $path, string $mediaType, string $attachmentType)
+    {
+        $query = [
+            'media_type' => $mediaType,
+            'attachment_type' => $attachmentType,
+        ];
+
+        return $this->httpUpload('cgi-bin/media/upload_attachment', ['media' => $path], [], $query);
     }
 }
