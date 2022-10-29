@@ -19,7 +19,7 @@ use Pimple\ServiceProviderInterface;
 /**
  * Class ServiceProvider.
  *
- * @author wangdongzhao <elim051@163.com>
+ * @author surpaimb <surpaimb@126.com>
  */
 class ServiceProvider implements ServiceProviderInterface
 {

@@ -13,7 +13,7 @@ use Surpaimb\WeChat\Kernel\Exceptions\InvalidArgumentException;
 /**
  * Class Client.
  *
- * @author wangdongzhao <elim051@163.com>
+ * @author surpaimb <surpaimb@126.com>
  */
 class Client extends BaseClient
 {

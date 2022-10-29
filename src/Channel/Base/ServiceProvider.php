@@ -1,9 +1,7 @@
 <?php
 
-/**
- * ServiceProvider.php.
- *
- * This file is part of the wechat.
+/*
+ * This file is part of the overtrue/wechat.
  *
  * (c) overtrue <i@overtrue.me>
  *
@@ -11,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Surpaimb\WeChat\OfficialAccount\Draft;
+namespace Surpaimb\WeChat\Channel\Base;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
@@ -19,7 +17,7 @@ use Pimple\ServiceProviderInterface;
 /**
  * Class ServiceProvider.
  *
- * @author surpaimb <surpaimb@126.com>
+ * @author mingyoung <mingyoungcheung@gmail.com>
  */
 class ServiceProvider implements ServiceProviderInterface
 {
@@ -28,7 +26,7 @@ class ServiceProvider implements ServiceProviderInterface
      */
     public function register(Container $app)
     {
-        $app['draft'] = function ($app) {
+        $app['base'] = function ($app) {
             return new Client($app);
         };
     }
